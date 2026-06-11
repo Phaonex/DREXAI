@@ -1,3 +1,4 @@
+// --- START OF FILE: src/basic-command.service.ts ---
 import { Injectable } from '@nestjs/common';
 import { CommandRunner, Command, Option } from 'nest-commander';
 import { LoggerService } from './logger/logger.service';
@@ -42,7 +43,7 @@ export class BasicCommand extends CommandRunner {
     this.logger.log(`[INFO] Starting full BOND pipeline for: ${absoluteInput}`);
 
     try {
-      // 1. Gather all PDF files
+      // 1. Gather all PDF files purely
       const files = fs.statSync(absoluteInput).isDirectory()
         ? fs.readdirSync(absoluteInput)
             .filter(f => f.endsWith('.pdf'))
@@ -51,12 +52,12 @@ export class BasicCommand extends CommandRunner {
 
       this.logger.log(`[INFO] Found ${files.length} PDF documents to process.`);
 
-      // Step A: Parse all PDFs to Immutable Chunks
-      const allChunks: DocumentChunk[] = [];
-      for (const file of files) {
-        const chunks = await this.pdfParser.parsePdfToChunks(file);
-        allChunks.push(...chunks);
-      }
+      // Step A: Parse all PDFs to Immutable Chunks using Promise.all + flat
+      const chunkNestedArrays = await Promise.all(
+        files.map(file => this.pdfParser.parsePdfToChunks(file))
+      );
+      const allChunks = chunkNestedArrays.flat();
+      
       this.logger.log(`[INFO] Ingestion complete: ${allChunks.length} total chunks extracted.`);
 
       if (!apiKey) {
@@ -64,37 +65,45 @@ export class BasicCommand extends CommandRunner {
         return;
       }
 
-      // Step B: Atomic Extraction (LLM Phase) across all documents
+      // Step B: Atomic Extraction (LLM Phase)
       this.logger.log(`[INFO] [PIPELINE] Stage 1: Atomic Extraction (LLM)...`);
       const targetChunks = allChunks.filter(c => c.text.trim().length > 50);
       
-      const rawLeaves: ProcurementMatchDeliverable[] = [];
-      const BATCH_SIZE = 5; // Process 5 pages at a time
+      const BATCH_SIZE = 5;
+      
+      // Purely calculate batches without 'let i'
+      const numBatches = Math.ceil(targetChunks.length / BATCH_SIZE);
+      const batches = Array.from({ length: numBatches }, (_, i) => 
+        targetChunks.slice(i * BATCH_SIZE, (i + 1) * BATCH_SIZE)
+      );
 
-      for (let i = 0; i < targetChunks.length; i += BATCH_SIZE) {
-        const batch = targetChunks.slice(i, i + BATCH_SIZE);
-        this.logger.log(`[INFO] [LLM_BATCH] Processing pages ${i + 1} to ${Math.min(i + BATCH_SIZE, targetChunks.length)} of ${targetChunks.length}...`);
+      // Execute sequential async batches purely using reduce
+      const rawLeaves = await batches.reduce(async (accPromise, batch, index) => {
+        const acc = await accPromise;
         
-        const leafTasks = batch.map(async (chunk) => {
+        const startPage = index * BATCH_SIZE + 1;
+        const endPage = Math.min((index + 1) * BATCH_SIZE, targetChunks.length);
+        this.logger.log(`[INFO] [LLM_BATCH] Processing pages ${startPage} to ${endPage} of ${targetChunks.length}...`);
+        
+        const results = await Promise.all(batch.map(async (chunk) => {
           try {
             return await this.deepSeek.extractLeaves(apiKey, chunk.text, chunk.id);
           } catch (e) {
-            this.logger.error(`[LLM_ERROR] Failed on Page ${chunk.pageNumber}: ${e.message}`);
-            return []; // Skip failed chunks but keep the pipeline running
+            const msg = e instanceof Error ? e.message : String(e);
+            this.logger.error(`[LLM_ERROR] Failed on Page ${chunk.pageNumber}: ${msg}`);
+            return []; // Skip failed chunks
           }
-        });
-
-        const results = await Promise.all(leafTasks);
-        rawLeaves.push(...results.flat());
-      }
+        }));
+        
+        return [...acc, ...results.flat()];
+      }, Promise.resolve([] as ProcurementMatchDeliverable[]));
       
       this.logger.log(`[INFO] [PIPELINE] Stage 1 Complete: ${rawLeaves.length} atomic requirements extracted.`);
 
-      // Step C: Cross-Document Consolidation
+      // Step C & D: The Pure Core (Direct chaining)
       this.logger.log(`[INFO] [PIPELINE] Stage 2: Cross-Document Consolidation...`);
       const consolidatedLeaves = await this.consolidation.consolidate(rawLeaves);
 
-      // Step D: Hierarchical Tree Construction
       this.logger.log(`[INFO] [PIPELINE] Stage 3: Hierarchical Tree Construction...`);
       const finalTree = await this.treeBuilder.buildTree(consolidatedLeaves);
 
@@ -115,27 +124,36 @@ export class BasicCommand extends CommandRunner {
     }
   }
 
+  /**
+   * Pure functional rendering: Transforms the tree into a single string 
+   * via nested maps, rather than triggering line-by-line side-effects via forEach.
+   */
   private renderTuiTree(tree: readonly ProcurementMatchDeliverable[]) {
-    tree.forEach(root => {
+    const outputString = tree.map(root => {
       const rootPages = root.procurementDocumentChunkIdArray
         .map(id => Buffer.from(id, 'base64').toString().split('-').pop())
         .join(', ');
 
-      this.logger.log(`\n📁 ${root.bulletPoint} (Cited on Pages: ${rootPages})`);
+      const rootHeader = `📁 ${root.bulletPoint} (Cited on Pages: ${rootPages})`;
       
-      root.deliverableArray.forEach(sub => {
-        this.logger.log(`  └─ 📂 ${sub.bulletPoint}`);
+      const subNodes = root.deliverableArray.map(sub => {
+        const subHeader = `  └─ 📂 ${sub.bulletPoint}`;
         
-        sub.deliverableArray.forEach(leaf => {
+        const leaves = sub.deliverableArray.map(leaf => {
           const pages = leaf.procurementDocumentChunkIdArray
             .map(id => Buffer.from(id, 'base64').toString().split('-').pop())
             .join(', ');
 
-          this.logger.log(`      └─ 📄 [${leaf.priority.toUpperCase()}] ${leaf.bulletPoint} (Page: ${pages})`);
-          this.logger.log(`          💡 Reasoning: ${leaf.aiReasoning?.en}`);
-        });
-      });
-    });
+          return `      └─ 📄 [${leaf.priority.toUpperCase()}] ${leaf.bulletPoint} (Page: ${pages})\n          💡 Reasoning: ${leaf.aiReasoning?.en}`;
+        }).join('\n');
+
+        return leaves ? `${subHeader}\n${leaves}` : subHeader;
+      }).join('\n');
+
+      return subNodes ? `${rootHeader}\n${subNodes}` : rootHeader;
+    }).join('\n\n');
+
+    this.logger.log(`\n${outputString}`);
   }
 
   @Option({
@@ -162,3 +180,4 @@ export class BasicCommand extends CommandRunner {
     return val;
   }
 }
+// --- END OF FILE ---

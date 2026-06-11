@@ -1,31 +1,64 @@
 import { Injectable } from '@nestjs/common';
 
+// 1. Data Definition (DDD)
+export type LogLevel = 'INFO' | 'ERROR' | 'WARN' | 'DEBUG';
+
+export interface LogEvent {
+  readonly timestamp: string;
+  readonly level: LogLevel;
+  readonly message: string;
+  readonly context?: unknown; // 'unknown' forces type-checking, unlike 'any'
+}
+
 @Injectable()
 export class LoggerService {
-  log(message: any, ...optionalParams: any[]) {
-    this.print('INFO', message, ...optionalParams);
+  log(message: string, context?: unknown) {
+    this.emit('INFO', message, context);
   }
 
-  error(message: any, ...optionalParams: any[]) {
-    this.print('ERROR', message, ...optionalParams);
+  error(message: string, context?: unknown) {
+    this.emit('ERROR', message, context);
   }
 
-  warn(message: any, ...optionalParams: any[]) {
-    this.print('WARN', message, ...optionalParams);
+  warn(message: string, context?: unknown) {
+    this.emit('WARN', message, context);
   }
 
-  debug(message: any, ...optionalParams: any[]) {
-    this.print('DEBUG', message, ...optionalParams);
+  debug(message: string, context?: unknown) {
+    this.emit('DEBUG', message, context);
   }
 
-  private print(level: string, message: any, ...optionalParams: any[]) {
-    const timestamp = new Date().toISOString();
-    const prefix = `[${timestamp}] [${level}]`;
+  /**
+   * Pure data transformation: Takes arguments and creates an immutable LogEvent.
+   * (Note: new Date() breaks strict purity, but is necessary for telemetry)
+   */
+  private createLogEvent(level: LogLevel, message: string, context?: unknown): LogEvent {
+    return Object.freeze({
+      timestamp: new Date().toISOString(),
+      level,
+      message,
+      ...(context !== undefined && { context })
+    });
+  }
+
+  /**
+   * The Imperative Boundary: This is the ONLY place in the entire app where 
+   * side-effects (console.log) are allowed to occur.
+   */
+  private emit(level: LogLevel, message: string, context?: unknown) {
+    const logEvent = this.createLogEvent(level, message, context);
     
-    if (typeof message === 'string') {
-      console.log(`${prefix} ${message}`, ...optionalParams);
+    // In local dev, you might still want string formatting. 
+    // In production, you emit pure JSON for log ingestion.
+    if (process.env.NODE_ENV === 'production') {
+      console.log(JSON.stringify(logEvent));
     } else {
-      console.log(`${prefix}`, JSON.stringify(message, null, 2), ...optionalParams);
+      const prefix = `[${logEvent.timestamp}] [${logEvent.level}]`;
+      if (logEvent.context) {
+        console.log(`${prefix} ${logEvent.message}`, JSON.stringify(logEvent.context, null, 2));
+      } else {
+        console.log(`${prefix} ${logEvent.message}`);
+      }
     }
   }
 }

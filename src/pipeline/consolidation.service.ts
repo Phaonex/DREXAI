@@ -33,27 +33,32 @@ export class ConsolidationService {
       });
 
       if (existingIndex > -1) {
-        const existing = acc[existingIndex];
-        // Create a new merged object (Immutability)
-        acc[existingIndex] = {
-          ...existing,
-          description: {
-            ...existing.description,
-            en: existing.description.en.length >= current.description.en.length 
-              ? existing.description.en 
-              : current.description.en
-          },
-          // Merge chunk references (Crucial for BOND assessment)
-          procurementDocumentChunkIdArray: Array.from(new Set([
-            ...existing.procurementDocumentChunkIdArray,
-            ...current.procurementDocumentChunkIdArray
-          ])),
-          // Prefer higher confidence if available
-          confidence: this.getHigherConfidence(existing.confidence, current.confidence)
-        };
-        return acc;
-      }
+      const existing = acc[existingIndex];
+      
+      const mergedNode: ProcurementMatchDeliverable = {
+        ...existing,
+        description: {
+          ...existing.description,
+          en: existing.description.en.length >= current.description.en.length 
+            ? existing.description.en 
+            : current.description.en
+        },
+        procurementDocumentChunkIdArray: Array.from(new Set([
+          ...existing.procurementDocumentChunkIdArray,
+          ...current.procurementDocumentChunkIdArray
+        ])),
+        confidence: this.getHigherConfidence(existing.confidence, current.confidence)
+      };
 
+      // Pure FP: Return a new array replacing the item at existingIndex
+      return [
+        ...acc.slice(0, existingIndex),
+        mergedNode,
+        ...acc.slice(existingIndex + 1)
+      ];
+    }
+
+    // If no match, append immutably
       return [...acc, current];
     }, []);
 

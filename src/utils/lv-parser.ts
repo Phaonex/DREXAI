@@ -31,14 +31,14 @@ export const parseLvHierarchy = (textLine: string): LvMatch | null => {
     };
   }
 
-  return {
-    hierarchy: {
-      level1: match[1],
-      level2: `${match[1]}.${match[2]}`,
-      level3: match[0].split(' ')[0].replace(/\s/g, ''),
-    },
-    title: match[4].trim(),
-  };
+    return {
+      hierarchy: {
+        level1: match[1],
+        level2: `${match[1]}.${match[2]}`,
+        level3: `${match[1]}.${match[2]}.${match[3]}`, // Pure composition from atomic captures
+      },
+      title: match[4].trim(),
+    };
 };
 
 /**

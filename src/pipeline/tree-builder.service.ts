@@ -1,3 +1,4 @@
+// --- START OF FILE: src/pipeline/tree-builder.service.ts ---
 import { Injectable } from '@nestjs/common';
 import { ProcurementMatchDeliverable } from '../types/procurement';
 import { LoggerService } from '../logger/logger.service';
@@ -15,80 +16,56 @@ export class TreeBuilderService {
   ): Promise<readonly ProcurementMatchDeliverable[]> {
     this.logger.log(`[INFO] [TREE_BUILDER] Building hierarchy from ${leaves.length} consolidated leaves...`);
 
-    const l1Nodes = new Map<string, ProcurementMatchDeliverable>();
-    const l2Nodes = new Map<string, ProcurementMatchDeliverable>();
+    // 1. Extract valid matches purely
+    const validMatches = leaves
+      .map(leaf => parseLvHierarchy(leaf.bulletPoint))
+      .filter((match): match is NonNullable<typeof match> => match !== null);
 
-    // 1. Identify all L1 and L2 keys present in the leaves
-    leaves.forEach(leaf => {
-      const match = parseLvHierarchy(leaf.bulletPoint);
-      if (!match) return;
+    // 2. Derive unique L1 and L2 keys purely
+    const uniqueL1Keys = Array.from(new Set(validMatches.map(m => m.hierarchy.level1)));
+    const uniqueL2Keys = Array.from(new Set(validMatches.map(m => m.hierarchy.level2)));
 
-      const { hierarchy, title } = match;
+    // 3. Compose the tree Top-Down using purely nested .map() calls
+    const finalTree = uniqueL1Keys.map(l1Key => {
+      // Find L2 keys belonging to this L1
+      const matchingL2Keys = uniqueL2Keys.filter(l2Key => l2Key.startsWith(l1Key));
 
-      if (!l1Nodes.has(hierarchy.level1)) {
-        l1Nodes.set(hierarchy.level1, this.createEmptyNode(`${hierarchy.level1} [Category]`));
-      }
+      // Build L2 Nodes
+      const l2Children = matchingL2Keys.map(l2Key => {
+        const rawChildren = leaves.filter(
+          leaf => parseLvHierarchy(leaf.bulletPoint)?.hierarchy.level2 === l2Key
+        );
+        
+        const normalize = (str: string) => str.toLowerCase().replace(/^\d{2}\.\d{2}\.\d{2,4}[A-Z]?\s*/, '').trim();
+        const nodeNormalized = normalize(`${l2Key} [Sub-Category]`);
+        
+        const validChildren = rawChildren.filter(child => {
+          const childNormalized = normalize(child.bulletPoint);
+          return childNormalized !== nodeNormalized && childNormalized !== l2Key;
+        });
 
-      if (!l2Nodes.has(hierarchy.level2)) {
-        l2Nodes.set(hierarchy.level2, this.createEmptyNode(`${hierarchy.level2} [Sub-Category]`));
-      }
-    });
+        const betterTitle = validChildren.find(c => c.bulletPoint.includes(l2Key))?.bulletPoint 
+            || `${l2Key} [Sub-Category]`;
 
-    // 2. Nest L3 leaves into L2 parents
-    const l2WithChildren = new Map<string, ProcurementMatchDeliverable>();
-    l2Nodes.forEach((node, key) => {
-      let children = leaves.filter(leaf => parseLvHierarchy(leaf.bulletPoint)?.hierarchy.level2 === key);
-      
-      // DEDUPLICATION: Remove children that are identical to the L2 header itself
-      const normalize = (str: string) => str.toLowerCase().replace(/^\d{2}\.\d{2}\.\d{2,4}[A-Z]?\s*/, '').trim();
-      const nodeNormalized = normalize(node.bulletPoint);
-      
-      children = children.filter(child => {
-        const childNormalized = normalize(child.bulletPoint);
-        // If the child name is essentially the same as the parent and has no sub-children, it's just header noise
-        return childNormalized !== nodeNormalized && childNormalized !== key;
+        return {
+          ...this.createEmptyNode(betterTitle),
+          deliverableArray: validChildren,
+          procurementDocumentChunkIdArray: Array.from(new Set(validChildren.flatMap(c => c.procurementDocumentChunkIdArray)))
+        };
       });
 
-      // Try to find a better title for the L2 node from the children's text if possible
-      const betterTitle = children.find(c => c.bulletPoint.includes(key))?.bulletPoint || node.bulletPoint;
+      const rootTitle = l2Children[0]?.bulletPoint.split('.')[0] + " [Root Category]" || `${l1Key} [Category]`;
 
-      l2WithChildren.set(key, { 
-        ...node, 
-        bulletPoint: betterTitle,
-        deliverableArray: children,
-        procurementDocumentChunkIdArray: Array.from(new Set(children.flatMap(c => c.procurementDocumentChunkIdArray)))
-      });
-    });
-
-    // 3. Nest L2 nodes into L1 parents
-    const finalTree: ProcurementMatchDeliverable[] = [];
-    l1Nodes.forEach((node, l1Key) => {
-      const children = Array.from(l2WithChildren.entries())
-        .filter(([l2Key]) => l2Key.startsWith(l1Key))
-        .map(([_, l2Node]) => l2Node);
-      
-      const betterTitle = children[0]?.bulletPoint.split('.')[0] + " [Root Category]" || node.bulletPoint;
-
-      finalTree.push({ 
-        ...node, 
-        bulletPoint: betterTitle,
-        deliverableArray: children,
-        procurementDocumentChunkIdArray: Array.from(new Set(children.flatMap(c => c.procurementDocumentChunkIdArray)))
-      });
+      // Return the L1 Node (pure replacement for array.push)
+      return {
+        ...this.createEmptyNode(rootTitle),
+        deliverableArray: l2Children,
+        procurementDocumentChunkIdArray: Array.from(new Set(l2Children.flatMap(c => c.procurementDocumentChunkIdArray)))
+      };
     });
 
     this.logger.log(`[INFO] [TREE_BUILDER] Hierarchy built with ${finalTree.length} root nodes.`);
     return Object.freeze(finalTree);
-  }
-
-  private extractHierarchy(leaf: ProcurementMatchDeliverable) {
-    // Try to find an LV number in the bullet point or description
-    const lvMatch = parseLvHierarchy(leaf.bulletPoint);
-    if (lvMatch) return lvMatch;
-
-    // Fallback: Check if description starts with an LV number
-    const descMatch = parseLvHierarchy(leaf.description.en);
-    return descMatch;
   }
 
   private createEmptyNode(title: string): ProcurementMatchDeliverable {
@@ -112,3 +89,4 @@ export class TreeBuilderService {
     };
   }
 }
+// --- END OF FILE ---

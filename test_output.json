@@ -30,10 +30,10 @@
         "openQuestionId": null,
         "deliverableArray": [
           {
-            "bulletPoint": "01 Installation of Christmas Lights",
+            "bulletPoint": "01 Installation",
             "description": {
-              "en": "Two scheduled run-throughs of the display to check functionality and attend to minor faults.",
-              "de": "Installation der Weihnachtsbeleuchtung im Stadtzentrum von Broseley."
+              "en": "Two scheduled run throughs of the display to check functionality and attend to minor faults.",
+              "de": "Installation der Weihnachtsbeleuchtung"
             },
             "priority": "must",
             "confidence": "high",
@@ -104,10 +104,10 @@
         "openQuestionId": null,
         "deliverableArray": [
           {
-            "bulletPoint": "02 Maintenance of Christmas Lights",
+            "bulletPoint": "02 Maintenance",
             "description": {
-              "en": "Call-out within 24 hours for major faults including complete failure of a motif or light string, extreme damage from vandalism, storms, or road traffic accidents.",
-              "de": "Wartung der Weihnachtsbeleuchtung während der Festzeit."
+              "en": "Call out within 24 hours for major faults including complete failure of a motif or light string, extreme damage from vandalism, storms or road traffic accident.",
+              "de": "Wartung der Weihnachtsbeleuchtung"
             },
             "priority": "must",
             "confidence": "high",
@@ -115,7 +115,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Maintenance is listed as a required service in the tender."
+              "en": "The tender explicitly requires maintenance as a core service."
             },
             "feedback": null,
             "feedbackText": null,
@@ -178,10 +178,10 @@
         "openQuestionId": null,
         "deliverableArray": [
           {
-            "bulletPoint": "03 Dismantling of Christmas Lights",
+            "bulletPoint": "03 Dismantling",
             "description": {
-              "en": "Additional call-out charges must be stated on the schedule.",
-              "de": "Abbau der Weihnachtsbeleuchtung nach der Festzeit."
+              "en": "Additional call out charges must be stated on the schedule.",
+              "de": "Demontage der Weihnachtsbeleuchtung"
             },
             "priority": "must",
             "confidence": "high",
@@ -189,7 +189,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Dismantling is explicitly mentioned as a required service."
+              "en": "The tender explicitly requires dismantling as a core service."
             },
             "feedback": null,
             "feedbackText": null,
@@ -252,10 +252,10 @@
         "openQuestionId": null,
         "deliverableArray": [
           {
-            "bulletPoint": "04 Testing of Christmas Lights",
+            "bulletPoint": "04 Testing",
             "description": {
-              "en": "Testing of Christmas lights to ensure safety and functionality.",
-              "de": "Prüfung der Weihnachtsbeleuchtung auf Sicherheit und Funktionsfähigkeit."
+              "en": "Testing of Christmas lights",
+              "de": "Prüfung der Weihnachtsbeleuchtung"
             },
             "priority": "must",
             "confidence": "high",
@@ -263,7 +263,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Testing is listed as a required service in the tender."
+              "en": "The tender explicitly requires testing as a core service."
             },
             "feedback": null,
             "feedbackText": null,
@@ -329,7 +329,7 @@
             "bulletPoint": "05 Compliance with Health & Safety Legislation",
             "description": {
               "en": "Lights are to be dismantled and removed as soon as possible after 6 January each year, but no later than 12 January.",
-              "de": "Einhaltung aller relevanten Gesundheits- und Sicherheitsvorschriften."
+              "de": "Einhaltung aller relevanten Gesundheits- und Sicherheitsvorschriften"
             },
             "priority": "must",
             "confidence": "high",
@@ -400,10 +400,10 @@
         "openQuestionId": null,
         "deliverableArray": [
           {
-            "bulletPoint": "06 Minimize Risk to Public",
+            "bulletPoint": "06 Risk Minimization to Public",
             "description": {
               "en": "All lights and features are to be tested during downtime and any minor work such as replacing bulbs and fixing faulty connections is to be undertaken.",
-              "de": "Es müssen Maßnahmen ergriffen werden, um Risiken für die Öffentlichkeit zu minimieren, z.B. Werkzeuge nicht auf dem Gehweg liegen lassen."
+              "de": "Es müssen Maßnahmen ergriffen werden, um jegliches Risiko für die Öffentlichkeit zu minimieren"
             },
             "priority": "must",
             "confidence": "high",
@@ -411,7 +411,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Explicitly stated as a requirement in the health and safety section."
+              "en": "Explicitly stated as a requirement."
             },
             "feedback": null,
             "feedbackText": null,
@@ -476,8 +476,8 @@
           {
             "bulletPoint": "07 Adherence to Wiring Regulations (BS 7671)",
             "description": {
-              "en": "Erection, testing and maintenance must comply with latest Wiring Regulations (BS 7671) and be undertaken by a competent person.",
-              "de": "Errichtung, Prüfung und Wartung müssen gemäß den neuesten Wiring Regulations (BS 7671) und durch eine kompetente Person erfolgen."
+              "en": "Erection, testing and maintenance must be carried out in accordance with the latest Wiring Regulations (BS 7671) by a competent person",
+              "de": "Errichtung, Prüfung und Wartung müssen gemäß den neuesten Wiring Regulations (BS 7671) durch eine befähigte Person erfolgen"
             },
             "priority": "must",
             "confidence": "high",
@@ -485,7 +485,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Explicitly stated as a requirement in the health and safety section."
+              "en": "Explicitly stated as a requirement."
             },
             "feedback": null,
             "feedbackText": null,
@@ -548,10 +548,10 @@
         "openQuestionId": null,
         "deliverableArray": [
           {
-            "bulletPoint": "08 Produce Health & Safety Information",
+            "bulletPoint": "08 Provision of Health & Safety Information",
             "description": {
               "en": "The contractor will notify BTC immediately of any defective lights and features that require major repair at additional cost or that cannot be repaired so replacement can be considered in good time.",
-              "de": "Erstellung einer Gesundheits- und Sicherheitsinformation vor der Installation, einschließlich Risikobewertung und Methodenerklärung."
+              "de": "Erstellung von Gesundheits- und Sicherheitsinformationen vor der Installation einschließlich Risikobewertung und Methodenerklärung"
             },
             "priority": "must",
             "confidence": "high",
@@ -625,7 +625,7 @@
             "bulletPoint": "10 Install festoons to front of Harwood's building & butchers' shop",
             "description": {
               "en": "Install festoons to front of Harwood's building & butchers' shop",
-              "de": "Installation von Girlanden vor dem Gebäude von Harwood und dem Metzgerladen"
+              "de": "Installation von Girlanden an der Vorderseite des Harwood-Gebäudes und des Metzgerladens"
             },
             "priority": "must",
             "confidence": "high",
@@ -633,14 +633,15 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Specific installation task listed as requirement."
+              "en": "Explicitly listed as a requirement without qualification, indicating a mandatory criterion."
             },
             "feedback": null,
             "feedbackText": null,
             "openQuestionId": null,
             "deliverableArray": [],
             "procurementDocumentChunkIdArray": [
-              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw=="
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA=="
             ],
             "workspaceDocumentChunkIdArray": [],
             "citedProductIdArray": [],
@@ -648,7 +649,8 @@
           }
         ],
         "procurementDocumentChunkIdArray": [
-          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw=="
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA=="
         ],
         "workspaceDocumentChunkIdArray": [],
         "citedProductIdArray": [],
@@ -656,7 +658,8 @@
       }
     ],
     "procurementDocumentChunkIdArray": [
-      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw=="
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA=="
     ],
     "workspaceDocumentChunkIdArray": [],
     "citedProductIdArray": [],
@@ -693,10 +696,10 @@
         "openQuestionId": null,
         "deliverableArray": [
           {
-            "bulletPoint": "11 Install string lights from the top of church street zigzagging up the high street to the social club",
+            "bulletPoint": "11 Install string lights from the top of church street zig-zagging up the high street to the social club",
             "description": {
-              "en": "Install string lights from the top of church street zigzagging up the high street to the social club",
-              "de": "Installation von Lichterketten vom oberen Ende der Church Street im Zickzack die Hauptstraße hinauf bis zum Social Club"
+              "en": "Install string lights from the top of church street zig-zagging up the high street to the social club",
+              "de": "Installation von Lichterketten vom oberen Ende der Church Street im Zickzack die Hauptstraße hinauf zum Social Club"
             },
             "priority": "must",
             "confidence": "high",
@@ -704,14 +707,15 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Specific installation task listed as requirement."
+              "en": "Explicitly listed as a requirement without qualification, indicating a mandatory criterion."
             },
             "feedback": null,
             "feedbackText": null,
             "openQuestionId": null,
             "deliverableArray": [],
             "procurementDocumentChunkIdArray": [
-              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw=="
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA=="
             ],
             "workspaceDocumentChunkIdArray": [],
             "citedProductIdArray": [],
@@ -719,7 +723,8 @@
           }
         ],
         "procurementDocumentChunkIdArray": [
-          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw=="
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA=="
         ],
         "workspaceDocumentChunkIdArray": [],
         "citedProductIdArray": [],
@@ -727,7 +732,8 @@
       }
     ],
     "procurementDocumentChunkIdArray": [
-      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw=="
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA=="
     ],
     "workspaceDocumentChunkIdArray": [],
     "citedProductIdArray": [],
@@ -766,7 +772,7 @@
           {
             "bulletPoint": "12 Removal of all lights",
             "description": {
-              "en": "Removal of all lights",
+              "en": "The following procedure must be followed when submitting quotations: All invitations to tender are subject to the Town Council's Standing Order number 17 and the terms of the Bribery Act 2010. No contractor shall contact councillors or staff to encourage or support their tender outside the prescribed process. Tenders are to be submitted in writing in a sealed marked envelope addressed to the Town Clerk. The envelope should be clearly marked 'Tender'. Tenders shall be opened by the Town Clerk in the presence of at least two councillors after the deadline for submission of tenders has passed. Tenders will be reported to and considered by the Town Council at a properly convened meeting.",
               "de": "Entfernung aller Lichter"
             },
             "priority": "must",
@@ -775,14 +781,15 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Listed as a requirement, implies post-event removal."
+              "en": "Explicitly listed as a requirement without qualification, indicating a mandatory criterion."
             },
             "feedback": null,
             "feedbackText": null,
             "openQuestionId": null,
             "deliverableArray": [],
             "procurementDocumentChunkIdArray": [
-              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw=="
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA=="
             ],
             "workspaceDocumentChunkIdArray": [],
             "citedProductIdArray": [],
@@ -790,7 +797,8 @@
           }
         ],
         "procurementDocumentChunkIdArray": [
-          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw=="
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA=="
         ],
         "workspaceDocumentChunkIdArray": [],
         "citedProductIdArray": [],
@@ -798,7 +806,8 @@
       }
     ],
     "procurementDocumentChunkIdArray": [
-      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw=="
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA=="
     ],
     "workspaceDocumentChunkIdArray": [],
     "citedProductIdArray": [],
@@ -838,7 +847,7 @@
             "bulletPoint": "13 The cost of all-inclusive call outs during the festival period for lights erected and maintenance checks",
             "description": {
               "en": "The cost of all-inclusive call outs during the festival period for lights erected and maintenance checks",
-              "de": "Die Kosten für alle inklusiven Einsätze während der Festzeit für errichtete Lichter und Wartungsprüfungen"
+              "de": "Die Kosten für pauschale Einsätze während der Festzeit für errichtete Lichter und Wartungsprüfungen"
             },
             "priority": "must",
             "confidence": "high",
@@ -846,7 +855,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Listed as a requirement, implies contractor must include these costs."
+              "en": "Explicitly listed as a requirement without qualification, indicating a mandatory criterion."
             },
             "feedback": null,
             "feedbackText": null,
@@ -909,7 +918,7 @@
             "bulletPoint": "14 Attendance at switch on event",
             "description": {
               "en": "Attendance at switch on event",
-              "de": "Teilnahme an der Einschaltveranstaltung"
+              "de": "Anwesenheit bei der Einschaltveranstaltung"
             },
             "priority": "must",
             "confidence": "high",
@@ -917,7 +926,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Listed as a requirement, contractor must be present on switch-on day."
+              "en": "Explicitly listed as a requirement without qualification, indicating a mandatory criterion."
             },
             "feedback": null,
             "feedbackText": null,
@@ -988,7 +997,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Specific installation task listed as requirement."
+              "en": "Explicitly listed as a requirement without qualification, indicating a mandatory criterion."
             },
             "feedback": null,
             "feedbackText": null,
@@ -1051,7 +1060,7 @@
             "bulletPoint": "09 Cost all items individually",
             "description": {
               "en": "To cost all items individually.",
-              "de": "Alle Artikel einzeln bepreisen."
+              "de": "Alle Positionen einzeln bepreisen."
             },
             "priority": "must",
             "confidence": "medium",
@@ -1059,7 +1068,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "The text states 'To cost all items individually' as a requirement, likely mandatory."
+              "en": "The text is an imperative sentence, likely a requirement."
             },
             "feedback": null,
             "feedbackText": null,

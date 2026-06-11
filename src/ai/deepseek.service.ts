@@ -74,7 +74,7 @@ export class DeepSeekService {
       // Handle different possible JSON wraps from LLM
       const leafArray = Array.isArray(parsedData) ? parsedData : (parsedData.requirements || parsedData.leaves || []);
 
-      return leafArray.map((raw: any) => {
+      return Object.freeze(leafArray.map((raw: unknown) => {
         const validated = LeafExtractionSchema.parse(raw);
         return this.createDefaultNode({
           bulletPoint: validated.bulletPoint,
@@ -88,7 +88,7 @@ export class DeepSeekService {
           aiReasoning: { en: validated.reasoningEn },
           procurementDocumentChunkIdArray: [chunkId]
         });
-      });
+      }))
 
     } catch (error) {
       if (error instanceof z.ZodError) {
