@@ -1,6 +1,7 @@
 // --- START OF FILE: src/pipeline/tree-builder.service.ts ---
 import { Injectable } from '@nestjs/common';
 import { ProcurementMatchDeliverable } from '../types/procurement';
+import { createProcurementNode } from '../factories/procurement.factory';
 import { LoggerService } from '../logger/logger.service';
 import { parseLvHierarchy } from '../utils/lv-parser';
 
@@ -47,46 +48,26 @@ export class TreeBuilderService {
         const betterTitle = validChildren.find(c => c.bulletPoint.includes(l2Key))?.bulletPoint 
             || `${l2Key} [Sub-Category]`;
 
-        return {
-          ...this.createEmptyNode(betterTitle),
+        // Factory-First Construction
+        return createProcurementNode({
+          bulletPoint: betterTitle,
           deliverableArray: validChildren,
           procurementDocumentChunkIdArray: Array.from(new Set(validChildren.flatMap(c => c.procurementDocumentChunkIdArray)))
-        };
+        });
       });
 
       const rootTitle = l2Children[0]?.bulletPoint.split('.')[0] + " [Root Category]" || `${l1Key} [Category]`;
 
-      // Return the L1 Node (pure replacement for array.push)
-      return {
-        ...this.createEmptyNode(rootTitle),
+      // Return the L1 Node via Factory (pure replacement for array.push)
+      return createProcurementNode({
+        bulletPoint: rootTitle,
         deliverableArray: l2Children,
         procurementDocumentChunkIdArray: Array.from(new Set(l2Children.flatMap(c => c.procurementDocumentChunkIdArray)))
-      };
+      });
     });
 
     this.logger.log(`[INFO] [TREE_BUILDER] Hierarchy built with ${finalTree.length} root nodes.`);
     return Object.freeze(finalTree);
-  }
-
-  private createEmptyNode(title: string): ProcurementMatchDeliverable {
-    return {
-      bulletPoint: title,
-      description: { en: "" },
-      priority: "must",
-      confidence: "high",
-      equivalenceAllowed: null,
-      fullfillable: null,
-      status: "waitingForAnalysis",
-      aiReasoning: null,
-      feedback: null,
-      feedbackText: null,
-      openQuestionId: null,
-      deliverableArray: [],
-      procurementDocumentChunkIdArray: [],
-      workspaceDocumentChunkIdArray: [],
-      citedProductIdArray: [],
-      citedPersonIdArray: [],
-    };
   }
 }
 // --- END OF FILE ---

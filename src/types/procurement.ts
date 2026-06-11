@@ -62,3 +62,23 @@ export interface LvPositionKey {
   readonly level2: string; // e.g., "02.01"
   readonly level3: string; // e.g., "02.01.001A"
 }
+
+export const createLeaf = (data: Partial<ProcurementMatchDeliverable>): ProcurementMatchDeliverable => ({
+  bulletPoint: '',
+  description: { en: '' },
+  priority: 'must',
+  confidence: null,
+  equivalenceAllowed: null,
+  fullfillable: null,
+  status: 'waitingForAnalysis',
+  aiReasoning: null,
+  feedback: null,
+  feedbackText: null,
+  openQuestionId: null,
+  deliverableArray: [], // Guaranteed empty
+  procurementDocumentChunkIdArray: [],
+  workspaceDocumentChunkIdArray: [],
+  citedProductIdArray: [], // Guaranteed empty
+  citedPersonIdArray: [],  // Guaranteed empty
+  ...data,
+});

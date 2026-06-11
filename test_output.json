@@ -1,0 +1,570 @@
+[
+  {
+    "bulletPoint": "01 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "01.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "01 Installation of Christmas Lights",
+            "description": {
+              "en": "Installation of Christmas lights in Broseley town center.",
+              "de": "Installation der Weihnachtsbeleuchtung im Stadtzentrum von Broseley."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "The tender explicitly requires installation as a core service."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "02 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "02.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "02 Maintenance of Christmas Lights",
+            "description": {
+              "en": "Ongoing maintenance of the Christmas lights during the display period.",
+              "de": "Laufende Wartung der Weihnachtsbeleuchtung während der Ausstellungszeit."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Maintenance is listed as a required service in the tender."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "03 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "03.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "03 Dismantling of Christmas Lights",
+            "description": {
+              "en": "Removal and dismantling of Christmas lights after the festive season.",
+              "de": "Abbau und Demontage der Weihnachtsbeleuchtung nach der Festzeit."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Dismantling is explicitly mentioned as a required service."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "04 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "04.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "04 Testing of Christmas Lights",
+            "description": {
+              "en": "Testing of Christmas lights to ensure safety and functionality.",
+              "de": "Prüfung der Weihnachtsbeleuchtung auf Sicherheit und Funktionsfähigkeit."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Testing is listed as a required service in the tender."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "05 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "05.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "05 Compliance with Health & Safety Legislation",
+            "description": {
+              "en": "Contractor must comply with all relevant health and safety legislation.",
+              "de": "Der Auftragnehmer muss alle einschlägigen Gesundheits- und Sicherheitsvorschriften einhalten."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Explicitly stated as a requirement under 'CONTRACT HEALTH & SAFETY'."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "06 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "06.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "06 Minimize Risk to Public",
+            "description": {
+              "en": "Measures must be taken to minimize any risk to the public, e.g., tools not left on pavement.",
+              "de": "Es müssen Maßnahmen ergriffen werden, um jegliches Risiko für die Öffentlichkeit zu minimieren, z.B. Werkzeuge nicht auf dem Gehweg liegen lassen."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Explicitly stated as a requirement under health and safety."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "07 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "07.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "07 Adherence to Wiring Regulations (BS 7671)",
+            "description": {
+              "en": "Erection, testing, and maintenance must comply with latest Wiring Regulations (BS 7671) by a competent person.",
+              "de": "Errichtung, Prüfung und Wartung müssen gemäß den neuesten Wiring Regulations (BS 7671) durch eine befähigte Person erfolgen."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Explicitly stated as a requirement under health and safety."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "08 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "08.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "08 Provide Health & Safety Information",
+            "description": {
+              "en": "Successful contractor must produce Health & Safety Information including Risk Assessment and Method Statement prior to installation.",
+              "de": "Der erfolgreiche Auftragnehmer muss vor der Installation eine Gesundheits- und Sicherheitsinformation einschließlich Risikobewertung und Methodenerklärung erstellen."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Explicitly stated as a requirement under health and safety."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  }
+]

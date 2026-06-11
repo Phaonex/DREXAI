@@ -9,6 +9,8 @@ import { TreeBuilderService } from './pipeline/tree-builder.service';
 import { DocumentChunk, ProcurementMatchDeliverable } from './types/procurement';
 import * as path from 'path';
 import * as fs from 'fs';
+import * as readline from 'readline/promises';
+import { stdin as input, stdout as output } from 'process';
 
 interface BasicCommandOptions {
   input?: string;
@@ -32,7 +34,6 @@ export class BasicCommand extends CommandRunner {
 
   async run(passedParams: string[], options?: BasicCommandOptions): Promise<void> {
     const inputPath = options?.input;
-    const apiKey = options?.apiKey;
     const outputPath = options?.output;
     const pageRange = options?.pages ? this.parseRange(options.pages) : null;
     
@@ -62,8 +63,11 @@ export class BasicCommand extends CommandRunner {
       
       this.logger.log(`[INFO] Ingestion complete: ${allChunks.length} total chunks extracted.`);
 
-      if (!apiKey) {
-        this.logger.log('[HINT] Provide --apiKey <key> to run full AI extraction.');
+      // Isolate the I/O side-effect and maintain immutability in the main flow
+      const activeApiKey = await this.resolveApiKey(options?.apiKey);
+
+      if (!activeApiKey || activeApiKey.trim() === '') {
+        this.logger.log('[ERROR] Pipeline aborted. API Key is required for LLM extraction.');
         return;
       }
 
@@ -91,7 +95,8 @@ export class BasicCommand extends CommandRunner {
         
         const results = await Promise.all(batch.map(async (chunk) => {
           try {
-            return await this.deepSeek.extractLeaves(apiKey, chunk.text, chunk.id);
+            // Use the strictly resolved activeApiKey here
+            return await this.deepSeek.extractLeaves(activeApiKey, chunk.text, chunk.id);
           } catch (e) {
             const msg = e instanceof Error ? e.message : String(e);
             this.logger.error(`[LLM_ERROR] Failed on Page ${chunk.pageNumber}: ${msg}`);
@@ -125,6 +130,21 @@ export class BasicCommand extends CommandRunner {
       const errorMessage = error instanceof Error ? error.message : String(error);
       this.logger.log(`[ERROR] Pipeline failure: ${errorMessage}`);
     }
+  }
+
+  /**
+   * Pure I/O isolation method. Resolves the API key from CLI, Env, or interactive prompt.
+   */
+  private async resolveApiKey(cliKey?: string): Promise<string | undefined> {
+    if (cliKey && cliKey !== '$DEEPSEEK_KEY') return cliKey;
+    if (process.env.DEEPSEEK_KEY) return process.env.DEEPSEEK_KEY;
+
+    this.logger.log('[INFO] No API key detected in flags or environment.');
+    const rl = readline.createInterface({ input, output });
+    const promptedKey = await rl.question('🔑 Please enter your DeepSeek API Key: ');
+    rl.close();
+    
+    return promptedKey;
   }
 
   private parseRange(range: string) {
