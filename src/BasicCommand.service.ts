@@ -12,6 +12,11 @@ import * as fs from 'fs';
 import * as readline from 'readline/promises';
 import { stdin as input, stdout as output } from 'process';
 
+// 1. The Monadic Exception-as-Data ADT
+type Result<T, E = Error> = 
+  | { readonly kind: 'Success'; readonly data: Readonly<T> }
+  | { readonly kind: 'Failure'; readonly error: E };
+
 interface BasicCommandOptions {
   input?: string;
   apiKey?: string;
@@ -46,7 +51,6 @@ export class BasicCommand extends CommandRunner {
     this.logger.log(`[INFO] Starting full BOND pipeline for: ${absoluteInput}`);
 
     try {
-      // 1. Gather all PDF files purely
       const files = fs.statSync(absoluteInput).isDirectory()
         ? fs.readdirSync(absoluteInput)
             .filter(f => f.endsWith('.pdf'))
@@ -55,15 +59,28 @@ export class BasicCommand extends CommandRunner {
 
       this.logger.log(`[INFO] Found ${files.length} PDF documents to process.`);
 
-      // Step A: Parse all PDFs to Immutable Chunks
       const chunkNestedArrays = await Promise.all(
         files.map(file => this.pdfParser.parsePdfToChunks(file))
       );
-      const allChunks = chunkNestedArrays.flat();
+// Step A: Parse all PDFs to Immutable Chunks (Returns Result ADTs)
+      const parseResults = await Promise.all(
+        files.map(file => this.pdfParser.parsePdfToChunks(file))
+      );
       
-      this.logger.log(`[INFO] Ingestion complete: ${allChunks.length} total chunks extracted.`);
+      // Pure ADT Unpacking: Filter for successes and flatten the inner data arrays
+      const allChunks = parseResults
+        .filter((res): res is { kind: 'Success'; data: readonly DocumentChunk[] } => res.kind === 'Success')
+        .flatMap(res => res.data); // Extracts the actual DocumentChunk objects
 
-      // Isolate the I/O side-effect and maintain immutability in the main flow
+      // Optional: Log any files that failed to parse
+      const failedPdfs = parseResults.filter(res => res.kind === 'Failure');
+      if (failedPdfs.length > 0) {
+        this.logger.log(`[WARN] Failed to parse ${failedPdfs.length} documents.`);
+      }
+      
+      this.logger.log(`[INFO] Ingestion complete: ${allChunks.length} total chunks extracted.`);      
+
+      // Isolate the key resolution side-effect cleanly
       const activeApiKey = await this.resolveApiKey(options?.apiKey);
 
       if (!activeApiKey || activeApiKey.trim() === '') {
@@ -71,20 +88,16 @@ export class BasicCommand extends CommandRunner {
         return;
       }
 
-      // Step B: Atomic Extraction (LLM Phase)
       this.logger.log(`[INFO] [PIPELINE] Stage 1: Atomic Extraction (LLM)...`);
       
-      // Surgical Filter: Apply page range here
       const targetChunks = allChunks
         .filter(c => c.text.trim().length > 50)
         .filter(c => !pageRange || (c.pageNumber >= pageRange.start && c.pageNumber <= pageRange.end));
       
       const BATCH_SIZE = 5;
       
-      const numBatches = Math.ceil(targetChunks.length / BATCH_SIZE);
-      const batches = Array.from({ length: numBatches }, (_, i) => 
-        targetChunks.slice(i * BATCH_SIZE, (i + 1) * BATCH_SIZE)
-      );
+      // 2. Consume the generator iterator into an array of batches safely
+      const batches = Array.from(this.chunkIterator(targetChunks, BATCH_SIZE));
 
       const rawLeaves = await batches.reduce(async (accPromise, batch, index) => {
         const acc = await accPromise;
@@ -94,22 +107,28 @@ export class BasicCommand extends CommandRunner {
         this.logger.log(`[INFO] [LLM_BATCH] Processing pages ${startPage} to ${endPage} of ${targetChunks.length}...`);
         
         const results = await Promise.all(batch.map(async (chunk) => {
-          try {
-            // Use the strictly resolved activeApiKey here
-            return await this.deepSeek.extractLeaves(activeApiKey, chunk.text, chunk.id);
-          } catch (e) {
-            const msg = e instanceof Error ? e.message : String(e);
-            this.logger.error(`[LLM_ERROR] Failed on Page ${chunk.pageNumber}: ${msg}`);
+          // ✅ CORRECT: The DeepSeek service returns the ADT directly now!
+        const result: Result<readonly ProcurementMatchDeliverable[]> = await this.deepSeek
+          .extractLeaves(activeApiKey, chunk.text, chunk.id);
+
+        // 3. Exhaustive Type Pattern Matching remains exactly the same
+        switch (result.kind) {
+          case 'Success':
+            return result.data;
+          case 'Failure':
+            this.logger.error(`[LLM_ERROR] Failed on Page ${chunk.pageNumber}: ${result.error.message}`);
             return [];
+          default:
+            const _exhaustiveCheck: never = result;
+            return _exhaustiveCheck;
           }
         }));
         
-        return [...acc, ...results.flat()];
-      }, Promise.resolve([] as ProcurementMatchDeliverable[]));
+        return Object.freeze([...acc, ...results.flat()]);
+      }, Promise.resolve([] as readonly ProcurementMatchDeliverable[]));
       
       this.logger.log(`[INFO] [PIPELINE] Stage 1 Complete: ${rawLeaves.length} atomic requirements extracted.`);
 
-      // Step C & D: The Pure Core
       this.logger.log(`[INFO] [PIPELINE] Stage 2: Cross-Document Consolidation...`);
       const consolidatedLeaves = await this.consolidation.consolidate(rawLeaves);
 
@@ -133,7 +152,17 @@ export class BasicCommand extends CommandRunner {
   }
 
   /**
-   * Pure I/O isolation method. Resolves the API key from CLI, Env, or interactive prompt.
+   * Safe Iterator/Generator Pattern. Emits data slices lazily without matrix iteration logic.
+   */
+  private *chunkIterator<T>(items: readonly T[], size: number): Generator<readonly T[]> {
+    const numBatches = Math.ceil(items.length / size);
+    yield* Array.from({ length: numBatches }, (_, i) => 
+      Object.freeze(items.slice(i * size, (i + 1) * size))
+    );
+  }
+
+  /**
+   * Pure edge resolution for the credential payload
    */
   private async resolveApiKey(cliKey?: string): Promise<string | undefined> {
     if (cliKey && cliKey !== '$DEEPSEEK_KEY') return cliKey;

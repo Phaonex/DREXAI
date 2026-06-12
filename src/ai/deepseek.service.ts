@@ -1,20 +1,26 @@
+// --- START OF FILE: src/ai/deepseek.service.ts ---
 import { Injectable } from '@nestjs/common';
 import axios from 'axios';
 import { LeafExtractionSchema, ProcurementMatchDeliverable } from '../types/procurement';
-import { z } from 'zod';
+import { createProcurementNode } from '../factories/procurement.factory';
+
+// 1. Define the boundary ADT (or import it if you moved it to types/procurement.ts)
+export type Result<T, E = Error> = 
+  | { readonly kind: 'Success'; readonly data: Readonly<T> }
+  | { readonly kind: 'Failure'; readonly error: E };
 
 @Injectable()
 export class DeepSeekService {
   private readonly apiUrl = 'https://api.deepseek.com/chat/completions';
 
   /**
-   * Pure-ish transformation: Text + Context -> Structured Extraction
+   * Network I/O Boundary: Converts chaotic LLM responses into strict, pure ADTs.
    */
   async extractLeaves(
     apiKey: string,
     text: string,
     chunkId: string
-  ): Promise<readonly ProcurementMatchDeliverable[]> {
+  ): Promise<Result<readonly ProcurementMatchDeliverable[]>> {
     const prompt = `
     Extract all individual procurement requirements (Level 3 positions) from the following text.
     
@@ -40,7 +46,6 @@ export class DeepSeekService {
     `;
 
     try {
-
       const response = await axios.post(
         this.apiUrl,
         {
@@ -49,7 +54,7 @@ export class DeepSeekService {
             { role: 'system', content: 'You are a professional AI Procurement Engineer specializing in DACH tender documents.' },
             { role: 'user', content: prompt }
           ],
-          response_format: { type: 'json_object' }, // DeepSeek supports JSON mode
+          response_format: { type: 'json_object' },
           temperature: 0.1
         },
         {
@@ -62,60 +67,46 @@ export class DeepSeekService {
 
       const rawContent = response.data.choices[0].message.content;
       
-      // Robustness: Strip control characters and handle common LLM markdown wraps
       const sanitized = rawContent
-        .replace(/[\u0000-\u001F\u007F-\u009F]/g, "") // Remove control characters
+        .replace(/[\u0000-\u001F\u007F-\u009F]/g, "")
         .replace(/^```json/, "")
         .replace(/```$/, "")
         .trim();
 
       const parsedData = JSON.parse(sanitized);
-      
-      // Handle different possible JSON wraps from LLM
       const leafArray = Array.isArray(parsedData) ? parsedData : (parsedData.requirements || parsedData.leaves || []);
 
-      return Object.freeze(leafArray.map((raw: unknown) => {
-        const validated = LeafExtractionSchema.parse(raw);
-        return this.createDefaultNode({
-          bulletPoint: validated.bulletPoint,
-          description: {
-            en: validated.descriptionEn,
-            de: validated.descriptionDe || ''
-          },
-          priority: validated.priority,
-          confidence: validated.confidence,
-          equivalenceAllowed: validated.equivalenceAllowed,
-          aiReasoning: { en: validated.reasoningEn },
-          procurementDocumentChunkIdArray: [chunkId]
+      // 2. Pure Mapping with safeParse (Drops hallucinations without throwing exceptions)
+      const validNodes = leafArray
+        .map((raw: unknown) => LeafExtractionSchema.safeParse(raw))
+        .filter((validation): validation is { success: true; data: any } => validation.success)
+        .map(validation => {
+          const validated = validation.data;
+          
+          // 3. Factory-First Instantiation
+          return createProcurementNode({
+            bulletPoint: validated.bulletPoint,
+            description: {
+              en: validated.descriptionEn,
+              de: validated.descriptionDe || ''
+            },
+            priority: validated.priority,
+            confidence: validated.confidence,
+            equivalenceAllowed: validated.equivalenceAllowed,
+            aiReasoning: { en: validated.reasoningEn },
+            procurementDocumentChunkIdArray: [chunkId]
+          });
         });
-      }))
+
+      return { kind: 'Success', data: Object.freeze(validNodes) };
 
     } catch (error) {
-      if (error instanceof z.ZodError) {
-        throw new Error(`LLM Schema Validation Failed: ${error.message}`);
-      }
-      throw error;
+      // 4. Trap all network and parsing explosions here, return pure data
+      return { 
+        kind: 'Failure', 
+        error: error instanceof Error ? error : new Error(String(error)) 
+      };
     }
   }
-
-  private createDefaultNode(params: Partial<ProcurementMatchDeliverable>): ProcurementMatchDeliverable {
-    return {
-      bulletPoint: params.bulletPoint ?? "",
-      description: params.description ?? { en: "" },
-      priority: params.priority ?? "must",
-      confidence: params.confidence ?? "high",
-      equivalenceAllowed: params.equivalenceAllowed ?? null,
-      fullfillable: null,
-      status: "waitingForAnalysis",
-      aiReasoning: params.aiReasoning ?? null,
-      feedback: null,
-      feedbackText: null,
-      openQuestionId: null,
-      deliverableArray: [],
-      procurementDocumentChunkIdArray: params.procurementDocumentChunkIdArray ?? [],
-      workspaceDocumentChunkIdArray: [],
-      citedProductIdArray: [],
-      citedPersonIdArray: [],
-    };
-  }
 }
+// --- END OF FILE ---

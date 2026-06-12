@@ -3,39 +3,36 @@ import { Injectable } from '@nestjs/common';
 import { ProcurementMatchDeliverable } from '../types/procurement';
 import { createProcurementNode } from '../factories/procurement.factory';
 import { LoggerService } from '../logger/logger.service';
-import { parseLvHierarchy } from '../utils/lv-parser';
+import { parseLvHierarchy, Option, LvMatch } from '../utils/lv-parser';
 
 @Injectable()
 export class TreeBuilderService {
   constructor(private readonly logger: LoggerService) {}
 
-  /**
-   * Pure transformation: Consolidated Leaves -> Hierarchical Tree (L1 -> L2 -> L3)
-   */
-  async buildTree(
+  buildTree(
     leaves: readonly ProcurementMatchDeliverable[]
-  ): Promise<readonly ProcurementMatchDeliverable[]> {
+  ): readonly ProcurementMatchDeliverable[] {
     this.logger.log(`[INFO] [TREE_BUILDER] Building hierarchy from ${leaves.length} consolidated leaves...`);
 
-    // 1. Extract valid matches purely
+    // 1. Pure ADT Unwrapping: Filter for 'Some' and map to the actual LvMatch value
     const validMatches = leaves
       .map(leaf => parseLvHierarchy(leaf.bulletPoint))
-      .filter((match): match is NonNullable<typeof match> => match !== null);
+      .filter((match): match is { kind: 'Some'; value: LvMatch } => match.kind === 'Some')
+      .map(match => match.value);
 
-    // 2. Derive unique L1 and L2 keys purely
+    // Now validMatches is strictly LvMatch[], so .hierarchy works perfectly!
     const uniqueL1Keys = Array.from(new Set(validMatches.map(m => m.hierarchy.level1)));
     const uniqueL2Keys = Array.from(new Set(validMatches.map(m => m.hierarchy.level2)));
 
-    // 3. Compose the tree Top-Down using purely nested .map() calls
     const finalTree = uniqueL1Keys.map(l1Key => {
-      // Find L2 keys belonging to this L1
       const matchingL2Keys = uniqueL2Keys.filter(l2Key => l2Key.startsWith(l1Key));
 
-      // Build L2 Nodes
       const l2Children = matchingL2Keys.map(l2Key => {
-        const rawChildren = leaves.filter(
-          leaf => parseLvHierarchy(leaf.bulletPoint)?.hierarchy.level2 === l2Key
-        );
+        // 2. Pure ADT filtering for children
+        const rawChildren = leaves.filter(leaf => {
+          const parsed = parseLvHierarchy(leaf.bulletPoint);
+          return parsed.kind === 'Some' && parsed.value.hierarchy.level2 === l2Key;
+        });
         
         const normalize = (str: string) => str.toLowerCase().replace(/^\d{2}\.\d{2}\.\d{2,4}[A-Z]?\s*/, '').trim();
         const nodeNormalized = normalize(`${l2Key} [Sub-Category]`);
@@ -48,26 +45,37 @@ export class TreeBuilderService {
         const betterTitle = validChildren.find(c => c.bulletPoint.includes(l2Key))?.bulletPoint 
             || `${l2Key} [Sub-Category]`;
 
-        // Factory-First Construction
         return createProcurementNode({
           bulletPoint: betterTitle,
           deliverableArray: validChildren,
-          procurementDocumentChunkIdArray: Array.from(new Set(validChildren.flatMap(c => c.procurementDocumentChunkIdArray)))
+          procurementDocumentChunkIdArray: this.mergeUnique(validChildren.flatMap(c => c.procurementDocumentChunkIdArray)),
+          workspaceDocumentChunkIdArray: this.mergeUnique(validChildren.flatMap(c => c.workspaceDocumentChunkIdArray)),
+          citedProductIdArray: this.mergeUnique(validChildren.flatMap(c => c.citedProductIdArray)),
+          citedPersonIdArray: this.mergeUnique(validChildren.flatMap(c => c.citedPersonIdArray)),
         });
       });
 
-      const rootTitle = l2Children[0]?.bulletPoint.split('.')[0] + " [Root Category]" || `${l1Key} [Category]`;
+      const firstChildBullet = l2Children[0]?.bulletPoint;
+      const rootTitle = firstChildBullet 
+        ? `${firstChildBullet.split('.')[0]} [Root Category]` 
+        : `${l1Key} [Category]`;
 
-      // Return the L1 Node via Factory (pure replacement for array.push)
       return createProcurementNode({
         bulletPoint: rootTitle,
         deliverableArray: l2Children,
-        procurementDocumentChunkIdArray: Array.from(new Set(l2Children.flatMap(c => c.procurementDocumentChunkIdArray)))
+        procurementDocumentChunkIdArray: this.mergeUnique(l2Children.flatMap(c => c.procurementDocumentChunkIdArray)),
+        workspaceDocumentChunkIdArray: this.mergeUnique(l2Children.flatMap(c => c.workspaceDocumentChunkIdArray)),
+        citedProductIdArray: this.mergeUnique(l2Children.flatMap(c => c.citedProductIdArray)),
+        citedPersonIdArray: this.mergeUnique(l2Children.flatMap(c => c.citedPersonIdArray)),
       });
     });
 
     this.logger.log(`[INFO] [TREE_BUILDER] Hierarchy built with ${finalTree.length} root nodes.`);
     return Object.freeze(finalTree);
+  }
+
+  private mergeUnique(arr: readonly string[]): readonly string[] {
+    return Object.freeze(Array.from(new Set(arr)));
   }
 }
 // --- END OF FILE ---

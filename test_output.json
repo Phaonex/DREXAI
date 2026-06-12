@@ -30,10 +30,10 @@
         "openQuestionId": null,
         "deliverableArray": [
           {
-            "bulletPoint": "01 Installation of Christmas Lights",
+            "bulletPoint": "01 Installation",
             "description": {
-              "en": "Installation of Christmas lights in Broseley town center.",
-              "de": "Installation der Weihnachtsbeleuchtung im Stadtzentrum von Broseley."
+              "en": "Installation of Christmas lights",
+              "de": "Installation der Weihnachtsbeleuchtung"
             },
             "priority": "must",
             "confidence": "high",
@@ -41,7 +41,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "The tender explicitly requires installation as a core service."
+              "en": "Core service required for the project."
             },
             "feedback": null,
             "feedbackText": null,
@@ -101,10 +101,10 @@
         "openQuestionId": null,
         "deliverableArray": [
           {
-            "bulletPoint": "02 Maintenance of Christmas Lights",
+            "bulletPoint": "02 Maintenance",
             "description": {
-              "en": "Ongoing maintenance of the Christmas lights during the display period.",
-              "de": "Laufende Wartung der Weihnachtsbeleuchtung während der Ausstellungszeit."
+              "en": "Maintenance of Christmas lights",
+              "de": "Wartung der Weihnachtsbeleuchtung"
             },
             "priority": "must",
             "confidence": "high",
@@ -112,7 +112,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Maintenance is listed as a required service in the tender."
+              "en": "Core service required for the project."
             },
             "feedback": null,
             "feedbackText": null,
@@ -172,10 +172,10 @@
         "openQuestionId": null,
         "deliverableArray": [
           {
-            "bulletPoint": "03 Dismantling of Christmas Lights",
+            "bulletPoint": "03 Dismantling",
             "description": {
-              "en": "Removal and dismantling of Christmas lights after the festive season.",
-              "de": "Abbau und Demontage der Weihnachtsbeleuchtung nach der Festzeit."
+              "en": "Dismantling of Christmas lights",
+              "de": "Demontage der Weihnachtsbeleuchtung"
             },
             "priority": "must",
             "confidence": "high",
@@ -183,7 +183,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Dismantling is explicitly mentioned as a required service."
+              "en": "Core service required for the project."
             },
             "feedback": null,
             "feedbackText": null,
@@ -243,10 +243,10 @@
         "openQuestionId": null,
         "deliverableArray": [
           {
-            "bulletPoint": "04 Testing of Christmas Lights",
+            "bulletPoint": "04 Testing",
             "description": {
-              "en": "Testing of Christmas lights to ensure safety and functionality.",
-              "de": "Prüfung der Weihnachtsbeleuchtung auf Sicherheit und Funktionsfähigkeit."
+              "en": "Testing of Christmas lights",
+              "de": "Prüfung der Weihnachtsbeleuchtung"
             },
             "priority": "must",
             "confidence": "high",
@@ -254,7 +254,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Testing is listed as a required service in the tender."
+              "en": "Core service required for the project."
             },
             "feedback": null,
             "feedbackText": null,
@@ -314,10 +314,10 @@
         "openQuestionId": null,
         "deliverableArray": [
           {
-            "bulletPoint": "05 Compliance with Health & Safety Legislation",
+            "bulletPoint": "05 Compliance with Health & Safety legislation",
             "description": {
-              "en": "Contractor must comply with all relevant health and safety legislation.",
-              "de": "Der Auftragnehmer muss alle einschlägigen Gesundheits- und Sicherheitsvorschriften einhalten."
+              "en": "Compliance with all relevant Health & Safety legislation",
+              "de": "Einhaltung aller relevanten Gesundheits- und Sicherheitsvorschriften"
             },
             "priority": "must",
             "confidence": "high",
@@ -325,7 +325,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Explicitly stated as a requirement under 'CONTRACT HEALTH & SAFETY'."
+              "en": "Mandatory legal requirement."
             },
             "feedback": null,
             "feedbackText": null,
@@ -385,10 +385,10 @@
         "openQuestionId": null,
         "deliverableArray": [
           {
-            "bulletPoint": "06 Minimize Risk to Public",
+            "bulletPoint": "06 Minimize risk to public",
             "description": {
-              "en": "Measures must be taken to minimize any risk to the public, e.g., tools not left on pavement.",
-              "de": "Es müssen Maßnahmen ergriffen werden, um jegliches Risiko für die Öffentlichkeit zu minimieren, z.B. Werkzeuge nicht auf dem Gehweg liegen lassen."
+              "en": "Measures to minimize any risk to the public, e.g., tools not left on pavement, vehicles parked without obstruction",
+              "de": "Maßnahmen zur Minimierung von Risiken für die Öffentlichkeit, z.B. Werkzeuge nicht auf dem Gehweg lassen, Fahrzeuge ohne Behinderung parken"
             },
             "priority": "must",
             "confidence": "high",
@@ -396,7 +396,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Explicitly stated as a requirement under health and safety."
+              "en": "Mandatory safety requirement."
             },
             "feedback": null,
             "feedbackText": null,
@@ -458,8 +458,8 @@
           {
             "bulletPoint": "07 Adherence to Wiring Regulations (BS 7671)",
             "description": {
-              "en": "Erection, testing, and maintenance must comply with latest Wiring Regulations (BS 7671) by a competent person.",
-              "de": "Errichtung, Prüfung und Wartung müssen gemäß den neuesten Wiring Regulations (BS 7671) durch eine befähigte Person erfolgen."
+              "en": "Erection, testing and maintenance in accordance with latest Wiring Regulations (BS 7671) by a competent person",
+              "de": "Errichtung, Prüfung und Wartung gemäß den neuesten Wiring Regulations (BS 7671) durch eine befähigte Person"
             },
             "priority": "must",
             "confidence": "high",
@@ -467,7 +467,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Explicitly stated as a requirement under health and safety."
+              "en": "Mandatory regulatory requirement."
             },
             "feedback": null,
             "feedbackText": null,
@@ -529,8 +529,8 @@
           {
             "bulletPoint": "08 Provide Health & Safety Information",
             "description": {
-              "en": "Successful contractor must produce Health & Safety Information including Risk Assessment and Method Statement prior to installation.",
-              "de": "Der erfolgreiche Auftragnehmer muss vor der Installation eine Gesundheits- und Sicherheitsinformation einschließlich Risikobewertung und Methodenerklärung erstellen."
+              "en": "Provide Health & Safety Information prior to installation including Risk Assessment and Method Statement",
+              "de": "Bereitstellung von Gesundheits- und Sicherheitsinformationen vor der Installation, einschließlich Risikobewertung und Methodenerklärung"
             },
             "priority": "must",
             "confidence": "high",
@@ -538,7 +538,7 @@
             "fullfillable": null,
             "status": "waitingForAnalysis",
             "aiReasoning": {
-              "en": "Explicitly stated as a requirement under health and safety."
+              "en": "Mandatory requirement for successful contractor."
             },
             "feedback": null,
             "feedbackText": null,
