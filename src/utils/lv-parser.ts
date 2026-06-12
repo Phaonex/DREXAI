@@ -1,64 +1,59 @@
 // --- START OF FILE: src/utils/lv-parser.ts ---
-import { LvPositionKey } from '../types/procurement';
 
-// 1. The Strict Option ADT (Eradicating 'null')
-export type Option<T> = 
+// 1. Algebraic Data Type (ADT) for safe absence of values
+export type Option<T> =
   | { readonly kind: 'Some'; readonly value: Readonly<T> }
   | { readonly kind: 'None' };
 
-export interface LvMatch {
-  readonly hierarchy: LvPositionKey;
+export type LvHierarchy = {
+  readonly level1: string;
+  readonly level2: string;
+  readonly level3: string;
+};
+
+export type LvMatch = {
+  readonly hierarchy: LvHierarchy;
   readonly title: string;
-}
+};
+
+// 2. Strict Deterministic Patterns
+// parse pattern: Must start with XX.XX.XXXX and capture the rest of the line
+const LV_EXTRACT_PATTERN = /^(\d{2})\.(\d{2})\.(\d{4})\s+(.+)$/;
+// search pattern: Looks for the XX.XX.XXXX sequence anywhere in a text block
+const LV_CONTAINS_PATTERN = /\b\d{2}\.\d{2}\.\d{4}\b/;
 
 /**
- * Pure utility to parse standard DACH LV position numbers and their titles.
- * Note: 100% expression-based, mathematically pure.
+ * Pure function to extract standard Austrian/German LV numbering.
+ * Ruthlessly rejects anything that isn't strictly XX.XX.XXXX.
  */
-export const parseLvHierarchy = (textLine: string): Option<LvMatch> => {
-  const trimmed = textLine.trim();
+export const parseLvHierarchy = (text: string): Option<LvMatch> => {
+  const match = text.trim().match(LV_EXTRACT_PATTERN);
+  
+  if (!match) {
+    return { kind: 'None' };
+  }
 
-  const lvRegex = /^(\d{2})\.(\d{2})\.(\d{2,4}[A-Z]?)\s+(.*)/;
-  const headerRegex = /^(\d{2})(\.\d{2})?\s+(.*)/;
+  const [, l1, l2, l3, title] = match;
 
-  const fullMatch = trimmed.match(lvRegex);
-  const headerMatch = trimmed.match(headerRegex);
-
-  // Pure nested ternary evaluation. No imperative control flow.
-  return fullMatch
-    ? {
-        kind: 'Some',
-        value: {
-          hierarchy: {
-            level1: fullMatch[1],
-            level2: `${fullMatch[1]}.${fullMatch[2]}`,
-            level3: `${fullMatch[1]}.${fullMatch[2]}.${fullMatch[3]}`,
-          },
-          title: fullMatch[4].trim(),
-        }
-      }
-    : headerMatch
-      ? {
-          kind: 'Some',
-          value: {
-            hierarchy: {
-              level1: headerMatch[1],
-              level2: headerMatch[2] ? `${headerMatch[1]}${headerMatch[2]}` : `${headerMatch[1]}.00`,
-              level3: headerMatch[2] ? `${headerMatch[1]}${headerMatch[2]}.0000` : `${headerMatch[1]}.00.0000`,
-            },
-            title: headerMatch[3].trim(),
-          }
-        }
-      : { kind: 'None' };
+  return Object.freeze({
+    kind: 'Some',
+    value: Object.freeze({
+      hierarchy: Object.freeze({
+        level1: l1,
+        level2: `${l1}.${l2}`,
+        level3: `${l1}.${l2}.${l3}`
+      }),
+      title: title.trim()
+    })
+  });
 };
 
 /**
- * Higher-order function to identify if a chunk contains LV positions
- * Note: O(1) memory evaluation using multiline regex testing.
+ * Pure function to detect if an LV block exists within a mixed text chunk.
+ * Scans globally across newlines.
  */
 export const containsLvPositions = (text: string): boolean => {
-  // The 'm' flag allows the regex to test across newlines without array allocations
-  return /^(\d{2})\.(\d{2})\.(\d{2,4}[A-Z]?)\s+/m.test(text) || 
-         /^(\d{2})(\.\d{2})?\s+/m.test(text);
+  return LV_CONTAINS_PATTERN.test(text);
 };
+
 // --- END OF FILE ---

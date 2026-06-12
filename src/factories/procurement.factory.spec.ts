@@ -1,63 +1,52 @@
 // --- START OF FILE: src/factories/procurement.factory.spec.ts ---
-import * as fc from 'fast-check';
 import { describe, it, expect } from '@jest/globals';
 import { createProcurementNode } from './procurement.factory';
 
-describe('ProcurementNode Factory (Property-Based Tests)', () => {
+describe('ProcurementFactory (BONDIQ Strict Schema TDD)', () => {
+  
+  it('BONDIQ CRITERIA: Enforces strict null/empty defaults for later-stage fields', () => {
+    // ACT: Create a basic node with only the minimum required data
+    const node = createProcurementNode({
+      bulletPoint: 'Supplier must provide ISO 27001 certification',
+      procurementDocumentChunkIdArray: ['chunk_1']
+    });
 
-  it('Property 1: Never bleeds undefined fields, regardless of input', () => {
-    // Generate random partial objects
-    const partialNodeArbitrary = fc.record({
-      bulletPoint: fc.string(),
-      priority: fc.constantFrom('must', 'should', 'optional' as const),
-      confidence: fc.constantFrom('high', 'medium', 'low', null as any),
-      procurementDocumentChunkIdArray: fc.array(fc.string())
-    }, { requiredKeys: [] }); // Simulate completely random missing fields
-
-    fc.assert(
-      fc.property(partialNodeArbitrary, (partialData) => {
-        const node = createProcurementNode(partialData);
-
-        // INVARIANT A: Complete Object Shape
-        expect(node).toHaveProperty('bulletPoint');
-        expect(node).toHaveProperty('status');
-        expect(node).toHaveProperty('deliverableArray');
-        
-        // INVARIANT B: Array Safety (Arrays must always exist and be arrays)
-        expect(Array.isArray(node.deliverableArray)).toBe(true);
-        expect(Array.isArray(node.procurementDocumentChunkIdArray)).toBe(true);
-        expect(Array.isArray(node.workspaceDocumentChunkIdArray)).toBe(true);
-        expect(Array.isArray(node.citedProductIdArray)).toBe(true);
-        expect(Array.isArray(node.citedPersonIdArray)).toBe(true);
-        
-        // INVARIANT C: Immutability (The returned object and arrays must be frozen)
-        expect(Object.isFrozen(node)).toBe(true);
-        expect(Object.isFrozen(node.deliverableArray)).toBe(true);
-        expect(Object.isFrozen(node.procurementDocumentChunkIdArray)).toBe(true);
-      })
-    );
+    // ASSERT: These must be exactly as BONDIQ specified
+    expect(node.status).toBe('waitingForAnalysis');
+    expect(node.aiReasoning).toBeNull();
+    expect(node.feedback).toBeNull();
+    expect(node.feedbackText).toBeNull();
+    expect(node.openQuestionId).toBeNull();
+    expect(node.citedProductIdArray).toEqual([]);
+    expect(node.citedPersonIdArray).toEqual([]);
+    
+    // ASSERT: Standard defaults
+    expect(node.confidence).toBeNull();
+    expect(node.priority).toBe('must'); // default
   });
 
-  it('Property 2: Strictly preserves explicitly provided data', () => {
-    // Generate valid string arrays
-    const validStringArray = fc.array(fc.string({ minLength: 1 }));
+  it('BONDIQ CRITERIA: Physically prevents pollution of restricted fields', () => {
+    // ARRANGE: A rogue payload trying to inject forbidden data
+    const roguePayload = {
+      bulletPoint: 'Provide cloud hosting',
+      aiReasoning: { en: 'Because I am an AI and I said so' }, // Forbidden
+      status: 'waitingForReview', // Forbidden override
+      citedProductIdArray: ['prod_123'] // Forbidden
+    } as any; // Cast as any to bypass TS just to test runtime immutability
 
-    fc.assert(
-      fc.property(validStringArray, validStringArray, (chunks, products) => {
-        const node = createProcurementNode({
-          procurementDocumentChunkIdArray: chunks,
-          citedProductIdArray: products
-        });
+    // ACT
+    const node = createProcurementNode(roguePayload);
 
-        // INVARIANT D: Data Retention
-        expect(node.procurementDocumentChunkIdArray).toEqual(chunks);
-        expect(node.citedProductIdArray).toEqual(products);
-        // The arrays should not be the same reference (deep cloned/frozen)
-        if (chunks.length > 0) {
-          expect(node.procurementDocumentChunkIdArray).not.toBe(chunks); 
-        }
-      })
-    );
+    // ASSERT: The factory must ruthlessly strip the rogue data and enforce the spec
+    expect(node.aiReasoning).toBeNull();
+    expect(node.status).toBe('waitingForAnalysis');
+    expect(node.citedProductIdArray).toEqual([]);
+  });
+
+  it('Property: Output is deeply frozen', () => {
+    const node = createProcurementNode({ bulletPoint: 'Test' });
+    expect(Object.isFrozen(node)).toBe(true);
+    expect(Object.isFrozen(node.deliverableArray)).toBe(true);
   });
 });
 // --- END OF FILE ---

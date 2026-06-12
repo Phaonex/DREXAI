@@ -1,111 +1,155 @@
 // --- START OF FILE: src/ai/deepseek.service.ts ---
 import { Injectable } from '@nestjs/common';
-import axios from 'axios';
-import { LeafExtractionSchema, ProcurementMatchDeliverable } from '../types/procurement';
+import { LoggerService } from '../logger/logger.service';
+import { ProcurementMatchDeliverable } from '../types/procurement';
 import { createProcurementNode } from '../factories/procurement.factory';
 
-// 1. Define the boundary ADT (or import it if you moved it to types/procurement.ts)
 export type Result<T, E = Error> = 
   | { readonly kind: 'Success'; readonly data: Readonly<T> }
   | { readonly kind: 'Failure'; readonly error: E };
 
 @Injectable()
 export class DeepSeekService {
-  private readonly apiUrl = 'https://api.deepseek.com/chat/completions';
+  constructor(private readonly logger: LoggerService) {}
 
   /**
-   * Network I/O Boundary: Converts chaotic LLM responses into strict, pure ADTs.
+   * PHASE 1: Extracts raw requirements from document text.
+   * Maps the LLM string outputs safely into immutable BONDIQ nodes.
    */
   async extractLeaves(
-    apiKey: string,
-    text: string,
+    apiKey: string, 
+    text: string, 
     chunkId: string
   ): Promise<Result<readonly ProcurementMatchDeliverable[]>> {
-    const prompt = `
-    Extract all individual procurement requirements (Level 3 positions) from the following text.
+    this.logger.debug(`[DeepSeek] Extracting leaves from chunk: ${chunkId}`);
     
-    CRITICAL INSTRUCTION: 
-    - Most requirements start with an LV number (e.g., 01.01.0010 or 02.02.001A). 
-    - You MUST include this number at the start of the "bulletPoint" field.
-    - If a requirement has no number, just provide the name.
-
-    For each requirement, identify:
-    - bulletPoint: The LV number followed by a short name (e.g., "01.01.0010 Excavation")
-    - descriptionEn: Detailed description translated to English
-    - descriptionDe: Original German description
-    - priority: "must" if it's a "Muss-Kriterium", "should" if it's a "Soll-Kriterium", otherwise "optional"
-    - confidence: How sure you are about the extraction (high, medium, low)
-    - equivalenceAllowed: boolean if "Gleichwertigkeit" is mentioned, else null
-    - reasoningEn: Why you chose this priority and how it relates to the project.
-
-    Return the result ONLY as a JSON array matching this structure:
-    [{ "bulletPoint": string, "descriptionEn": string, "descriptionDe": string, "priority": "must"|"should"|"optional", "confidence": "high"|"medium"|"low", "equivalenceAllowed": boolean|null, "reasoningEn": string }]
-
-    --- Text Content ---
-    ${text}
-    `;
-
     try {
-      const response = await axios.post(
-        this.apiUrl,
-        {
-          model: 'deepseek-chat',
-          messages: [
-            { role: 'system', content: 'You are a professional AI Procurement Engineer specializing in DACH tender documents.' },
-            { role: 'user', content: prompt }
-          ],
-          response_format: { type: 'json_object' },
-          temperature: 0.1
-        },
-        {
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${apiKey}`
-          }
-        }
-      );
-
-      const rawContent = response.data.choices[0].message.content;
+      const prompt = `You are a procurement analyst. Extract the core requirements from this text. 
+      Return strictly a JSON array of objects with a single key 'bulletPoint'. 
+      Example: [{"bulletPoint": "Provide 24/7 support"}].
+      Do NOT include markdown formatting, backticks, or explanations. Output pure JSON only.
+      Text data: ${text}`;
       
-      const sanitized = rawContent
-        .replace(/[\u0000-\u001F\u007F-\u009F]/g, "")
-        .replace(/^```json/, "")
-        .replace(/```$/, "")
-        .trim();
+      const rawResponse = await this.callLlm(prompt, apiKey);
 
-      const parsedData = JSON.parse(sanitized);
-      const leafArray = Array.isArray(parsedData) ? parsedData : (parsedData.requirements || parsedData.leaves || []);
+      // 1. Pure Data Transformation: Strip hallucinatory markdown backticks
+      const cleanJson = rawResponse.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
 
-      // 2. Pure Mapping with safeParse (Drops hallucinations without throwing exceptions)
-      const validNodes = leafArray
-        .map((raw: unknown) => LeafExtractionSchema.safeParse(raw))
-        .filter((validation): validation is { success: true; data: any } => validation.success)
-        .map(validation => {
-          const validated = validation.data;
-          
-          // 3. Factory-First Instantiation
-          return createProcurementNode({
-            bulletPoint: validated.bulletPoint,
-            description: {
-              en: validated.descriptionEn,
-              de: validated.descriptionDe || ''
-            },
-            priority: validated.priority,
-            confidence: validated.confidence,
-            equivalenceAllowed: validated.equivalenceAllowed,
-            aiReasoning: { en: validated.reasoningEn },
-            procurementDocumentChunkIdArray: [chunkId]
-          });
-        });
+      // 2. Parse into unknown (Do not trust the data type yet)
+      const parsed: unknown = JSON.parse(cleanJson);
 
-      return { kind: 'Success', data: Object.freeze(validNodes) };
+      // 3. Strict Schema Validation (Data-Driven Guardrail)
+      if (!Array.isArray(parsed) || !parsed.every(item => 
+          typeof item === 'object' && 
+          item !== null && 
+          'bulletPoint' in item && 
+          typeof (item as any).bulletPoint === 'string'
+      )) {
+        throw new Error('LLM output schema violation: Expected Array<{ bulletPoint: string }>');
+      }
 
+      // 4. Pure Mapping: Safely instantiate nodes with deep-frozen arrays
+      const leaves = parsed.map((item: { bulletPoint: string }) => createProcurementNode({
+        bulletPoint: item.bulletPoint,
+        procurementDocumentChunkIdArray: Object.freeze([chunkId])
+      }));
+
+      // Return the mathematically safe Success state
+      return { kind: 'Success', data: Object.freeze(leaves) };
+      
     } catch (error) {
-      // 4. Trap all network and parsing explosions here, return pure data
+      // Trap the explosion and return a mathematically safe Failure state
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      this.logger.error(`[DeepSeek] Extraction failed for chunk ${chunkId}: ${errorMessage}`);
+      
       return { 
         kind: 'Failure', 
-        error: error instanceof Error ? error : new Error(String(error)) 
+        error: error instanceof Error ? error : new Error(errorMessage) 
       };
+    }
+  }
+
+  /**
+   * PHASE 2: Semantically clusters leaves by asking the LLM to group indices.
+   */
+  async clusterSemantically(
+    leaves: readonly ProcurementMatchDeliverable[],
+    apiKey?: string
+  ): Promise<Array<{ consolidatedBulletPoint: string; originalNodes: ProcurementMatchDeliverable[] }>> {
+    this.logger.debug(`[DeepSeek] Clustering ${leaves.length} items...`);
+    
+    const tokenOptimizedPayload = leaves.map((leaf, index) => ({ index, text: leaf.bulletPoint }));
+    const prompt = `Group these items semantically. Return JSON array of { "consolidatedBulletPoint": "...", "originalNodeIndices": [0, 1] }. Data: ${JSON.stringify(tokenOptimizedPayload)}`;
+    
+    const responseJson = await this.callLlm(prompt, apiKey);
+    const parsed = JSON.parse(responseJson) as Array<{ consolidatedBulletPoint: string; originalNodeIndices: number[] }>;
+    
+    return parsed.map(cluster => ({
+      consolidatedBulletPoint: cluster.consolidatedBulletPoint,
+      originalNodes: cluster.originalNodeIndices.map(idx => leaves[idx])
+    }));
+  }
+
+  /**
+   * PHASE 3: Assigns L1/L2 categories by asking the LLM to tag indices.
+   */
+  async categorizeLeaves(
+    leaves: readonly ProcurementMatchDeliverable[],
+    apiKey?: string
+  ): Promise<Array<{ l1: string; l2: string; leaf: ProcurementMatchDeliverable }>> {
+    this.logger.debug(`[DeepSeek] Categorizing ${leaves.length} items...`);
+    
+    const tokenOptimizedPayload = leaves.map((leaf, index) => ({ index, text: leaf.bulletPoint }));
+    const prompt = `Categorize these items. Return JSON array of { "l1": "Category", "l2": "SubCategory", "leafIndex": 0 }. Data: ${JSON.stringify(tokenOptimizedPayload)}`;
+    
+    const responseJson = await this.callLlm(prompt, apiKey);
+    const parsed = JSON.parse(responseJson) as Array<{ l1: string; l2: string; leafIndex: number }>;
+    
+    return parsed.map(item => ({
+      l1: item.l1,
+      l2: item.l2,
+      leaf: leaves[item.leafIndex]
+    }));
+  }
+
+  /**
+   * The actual network boundary interacting with the real DeepSeek API.
+   * Fallback to process.env.DEEPSEEK_KEY if not explicitly passed by the CLI.
+   */
+  private async callLlm(prompt: string, apiKey?: string): Promise<string> {
+    const key = apiKey || process.env.DEEPSEEK_KEY;
+    if (!key) {
+      throw new Error('DeepSeek API key is missing. Pass it via CLI or set DEEPSEEK_KEY env var.');
+    }
+
+    try {
+      // DeepSeek is OpenAI-compatible
+      const response = await fetch('https://api.deepseek.com/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${key}`
+        },
+        body: JSON.stringify({
+          model: 'deepseek-chat',
+          messages: [
+            { role: 'system', content: 'You are a precise data extraction system. Return ONLY valid JSON, without markdown formatting or code blocks.' },
+            { role: 'user', content: prompt }
+          ],
+          response_format: { type: 'json_object' }, // Ensures raw JSON output
+          temperature: 0.1 // Low temperature for deterministic outputs
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error(`DeepSeek API Error: ${response.status} ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      return data.choices[0].message.content;
+    } catch (error) {
+      this.logger.error(`[DeepSeek] Network call failed: ${error}`);
+      throw error;
     }
   }
 }

@@ -21,12 +21,18 @@ const DEFAULT_NODE: ProcurementMatchDeliverable = Object.freeze({
 });
 
 export const createProcurementNode = (
-  overrides: Partial<ProcurementMatchDeliverable>
+  overrides: Partial<ProcurementMatchDeliverable> & Pick<ProcurementMatchDeliverable, 'bulletPoint'>
 ): ProcurementMatchDeliverable => {
   return Object.freeze({
-    ...DEFAULT_NODE,
-    ...overrides,
-    // FIX: Clone the arrays using [...array] before freezing!
+    // 1. Allowed Dynamic Fields
+    bulletPoint: overrides.bulletPoint,
+    description: overrides.description || DEFAULT_NODE.description,
+    priority: overrides.priority || DEFAULT_NODE.priority,
+    confidence: overrides.confidence !== undefined ? overrides.confidence : DEFAULT_NODE.confidence,
+    equivalenceAllowed: overrides.equivalenceAllowed !== undefined ? overrides.equivalenceAllowed : DEFAULT_NODE.equivalenceAllowed,
+    fullfillable: overrides.fullfillable !== undefined ? overrides.fullfillable : DEFAULT_NODE.fullfillable,
+    
+    // 2. Arrays (Cloned if provided, otherwise strictly reference the frozen default)
     deliverableArray: overrides.deliverableArray 
       ? Object.freeze([...overrides.deliverableArray]) 
       : DEFAULT_NODE.deliverableArray,
@@ -36,12 +42,15 @@ export const createProcurementNode = (
     workspaceDocumentChunkIdArray: overrides.workspaceDocumentChunkIdArray 
       ? Object.freeze([...overrides.workspaceDocumentChunkIdArray]) 
       : DEFAULT_NODE.workspaceDocumentChunkIdArray,
-    citedProductIdArray: overrides.citedProductIdArray 
-      ? Object.freeze([...overrides.citedProductIdArray]) 
-      : DEFAULT_NODE.citedProductIdArray,
-    citedPersonIdArray: overrides.citedPersonIdArray 
-      ? Object.freeze([...overrides.citedPersonIdArray]) 
-      : DEFAULT_NODE.citedPersonIdArray,
+
+    // 3. THE BONDIQ VAULT: Ignore overrides, strictly bind to DEFAULT_NODE
+    status: DEFAULT_NODE.status,
+    aiReasoning: DEFAULT_NODE.aiReasoning,
+    feedback: DEFAULT_NODE.feedback,
+    feedbackText: DEFAULT_NODE.feedbackText,
+    openQuestionId: DEFAULT_NODE.openQuestionId,
+    citedProductIdArray: DEFAULT_NODE.citedProductIdArray,
+    citedPersonIdArray: DEFAULT_NODE.citedPersonIdArray,
   });
 };
 // --- END OF FILE ---
