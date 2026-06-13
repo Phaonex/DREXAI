@@ -1,6 +1,6 @@
 [
   {
-    "bulletPoint": "Tender [Category]",
+    "bulletPoint": "Service Description [Category]",
     "description": {
       "en": ""
     },
@@ -10,7 +10,7 @@
     "fullfillable": null,
     "deliverableArray": [
       {
-        "bulletPoint": "Scope of Work [Sub-Category]",
+        "bulletPoint": "Christmas Light Services [Sub-Category]",
         "description": {
           "en": ""
         },
@@ -20,7 +20,75 @@
         "fullfillable": null,
         "deliverableArray": [
           {
-            "bulletPoint": "Scope of work: installation, maintenance, dismantling, and testing of Christmas lights",
+            "bulletPoint": "Provide installation, maintenance, dismantling, and testing of Christmas Lights",
+            "description": {
+              "en": ""
+            },
+            "priority": "must",
+            "confidence": null,
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": null,
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "Tender Submission [Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "Agreement Duration [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Submit tender for 1-year, 2-year, or 3-year service agreement",
             "description": {
               "en": ""
             },
@@ -55,7 +123,7 @@
         "citedPersonIdArray": []
       },
       {
-        "bulletPoint": "Submission [Sub-Category]",
+        "bulletPoint": "Site Visit [Sub-Category]",
         "description": {
           "en": ""
         },
@@ -65,7 +133,7 @@
         "fullfillable": null,
         "deliverableArray": [
           {
-            "bulletPoint": "Tender submission: submit tender for 1-year, 2-year, or 3-year service agreement; include all costs and site visits",
+            "bulletPoint": "Contractor must make necessary site visits and satisfy themselves of access arrangements and all required information prior to submitting tender",
             "description": {
               "en": ""
             },
@@ -75,7 +143,6 @@
             "fullfillable": null,
             "deliverableArray": [],
             "procurementDocumentChunkIdArray": [
-              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
               "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg=="
             ],
             "workspaceDocumentChunkIdArray": [],
@@ -89,7 +156,6 @@
           }
         ],
         "procurementDocumentChunkIdArray": [
-          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
           "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg=="
         ],
         "workspaceDocumentChunkIdArray": [],
@@ -102,7 +168,7 @@
         "citedPersonIdArray": []
       },
       {
-        "bulletPoint": "Evaluation Criteria [Sub-Category]",
+        "bulletPoint": "Inclusive Costs [Sub-Category]",
         "description": {
           "en": ""
         },
@@ -112,7 +178,7 @@
         "fullfillable": null,
         "deliverableArray": [
           {
-            "bulletPoint": "Evaluation criteria: ability to deliver similar projects (25%), price within budget (25%), quality and value for money (30%), use of local resources (20%)",
+            "bulletPoint": "Tender must be fully inclusive of all costs",
             "description": {
               "en": ""
             },
@@ -122,7 +188,7 @@
             "fullfillable": null,
             "deliverableArray": [],
             "procurementDocumentChunkIdArray": [
-              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg=="
             ],
             "workspaceDocumentChunkIdArray": [],
             "status": "waitingForAnalysis",
@@ -135,7 +201,7 @@
           }
         ],
         "procurementDocumentChunkIdArray": [
-          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg=="
         ],
         "workspaceDocumentChunkIdArray": [],
         "status": "waitingForAnalysis",
@@ -147,7 +213,7 @@
         "citedPersonIdArray": []
       },
       {
-        "bulletPoint": "Payment Terms [Sub-Category]",
+        "bulletPoint": "Evaluation Date [Sub-Category]",
         "description": {
           "en": ""
         },
@@ -157,52 +223,7 @@
         "fullfillable": null,
         "deliverableArray": [
           {
-            "bulletPoint": "Payment terms: payment upon satisfactory completion",
-            "description": {
-              "en": ""
-            },
-            "priority": "must",
-            "confidence": null,
-            "equivalenceAllowed": null,
-            "fullfillable": null,
-            "deliverableArray": [],
-            "procurementDocumentChunkIdArray": [
-              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
-            ],
-            "workspaceDocumentChunkIdArray": [],
-            "status": "waitingForAnalysis",
-            "aiReasoning": null,
-            "feedback": null,
-            "feedbackText": null,
-            "openQuestionId": null,
-            "citedProductIdArray": [],
-            "citedPersonIdArray": []
-          }
-        ],
-        "procurementDocumentChunkIdArray": [
-          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
-        ],
-        "workspaceDocumentChunkIdArray": [],
-        "status": "waitingForAnalysis",
-        "aiReasoning": null,
-        "feedback": null,
-        "feedbackText": null,
-        "openQuestionId": null,
-        "citedProductIdArray": [],
-        "citedPersonIdArray": []
-      },
-      {
-        "bulletPoint": "Contract Management [Sub-Category]",
-        "description": {
-          "en": ""
-        },
-        "priority": "must",
-        "confidence": null,
-        "equivalenceAllowed": null,
-        "fullfillable": null,
-        "deliverableArray": [
-          {
-            "bulletPoint": "Contract management: variations must be agreed in writing; Town Council monitors work; tenders considered on 9 June 2026 with response week commencing 15 June 2026",
+            "bulletPoint": "All tenders will be considered by the Town Council on 9 June 2026 and receive a response week commencing 15 June 2026",
             "description": {
               "en": ""
             },
@@ -251,7 +272,7 @@
     "citedPersonIdArray": []
   },
   {
-    "bulletPoint": "Compliance [Category]",
+    "bulletPoint": "Tender Requirements [Category]",
     "description": {
       "en": ""
     },
@@ -261,7 +282,7 @@
     "fullfillable": null,
     "deliverableArray": [
       {
-        "bulletPoint": "Health & Safety [Sub-Category]",
+        "bulletPoint": "General Compliance [Sub-Category]",
         "description": {
           "en": ""
         },
@@ -271,7 +292,7 @@
         "fullfillable": null,
         "deliverableArray": [
           {
-            "bulletPoint": "Health & Safety compliance: comply with legislation, minimize public risk, adhere to Wiring Regulations, produce H&S info, provide insurance",
+            "bulletPoint": "Comply with all written requirements, have satisfactory references, and offer best value for money",
             "description": {
               "en": ""
             },
@@ -281,7 +302,593 @@
             "fullfillable": null,
             "deliverableArray": [],
             "procurementDocumentChunkIdArray": [
-              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": null,
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "Evaluation Criteria [Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "Quality [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Demonstrate ability to deliver similar projects to a high quality (25% evaluation weight)",
+            "description": {
+              "en": ""
+            },
+            "priority": "must",
+            "confidence": null,
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": null,
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      },
+      {
+        "bulletPoint": "Price [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Fit price within budget (25% evaluation weight)",
+            "description": {
+              "en": ""
+            },
+            "priority": "must",
+            "confidence": null,
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": null,
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      },
+      {
+        "bulletPoint": "Value for Money [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Provide quality and value for money (30% evaluation weight)",
+            "description": {
+              "en": ""
+            },
+            "priority": "must",
+            "confidence": null,
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": null,
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      },
+      {
+        "bulletPoint": "Local Resources [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Use local resources and skills (20% evaluation weight)",
+            "description": {
+              "en": ""
+            },
+            "priority": "must",
+            "confidence": null,
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": null,
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "Payment Terms [Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "Completion [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Payment upon satisfactory completion of works",
+            "description": {
+              "en": ""
+            },
+            "priority": "must",
+            "confidence": null,
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": null,
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "Health & Safety [Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "Legislation Compliance [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Comply with all relevant Health & Safety legislation",
+            "description": {
+              "en": ""
+            },
+            "priority": "must",
+            "confidence": null,
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": null,
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      },
+      {
+        "bulletPoint": "Public Risk Minimization [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Minimize risk to the public, e.g., no tools left on pavement, vehicles parked without obstruction",
+            "description": {
+              "en": ""
+            },
+            "priority": "must",
+            "confidence": null,
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": null,
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      },
+      {
+        "bulletPoint": "Regulations Adherence [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Adhere to codes of practice and regulations, including latest Wiring Regulations (BS 7671)",
+            "description": {
+              "en": ""
+            },
+            "priority": "must",
+            "confidence": null,
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": null,
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      },
+      {
+        "bulletPoint": "Competent Person [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Work undertaken by a competent person as per regulations",
+            "description": {
+              "en": ""
+            },
+            "priority": "must",
+            "confidence": null,
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": null,
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      },
+      {
+        "bulletPoint": "Documentation [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Produce Health & Safety Information prior to installation including Risk Assessment and Method Statement",
+            "description": {
+              "en": ""
+            },
+            "priority": "must",
+            "confidence": null,
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": null,
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "Insurance [Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "Public Liability [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Provide public liability insurance and include current insurance certificate with tender response",
+            "description": {
+              "en": ""
+            },
+            "priority": "must",
+            "confidence": null,
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
               "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg=="
             ],
             "workspaceDocumentChunkIdArray": [],
@@ -295,7 +902,6 @@
           }
         ],
         "procurementDocumentChunkIdArray": [
-          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
           "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg=="
         ],
         "workspaceDocumentChunkIdArray": [],
@@ -309,7 +915,119 @@
       }
     ],
     "procurementDocumentChunkIdArray": [
-      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "Contract Management [Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "Variations [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Any contract variations must be notified by the Town Clerk and agreed in writing between both parties",
+            "description": {
+              "en": ""
+            },
+            "priority": "must",
+            "confidence": null,
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": null,
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      },
+      {
+        "bulletPoint": "Monitoring [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "A Town Council representative will monitor work regularly and report concerns to the Town Clerk",
+            "description": {
+              "en": ""
+            },
+            "priority": "must",
+            "confidence": null,
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": null,
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
       "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg=="
     ],
     "workspaceDocumentChunkIdArray": [],

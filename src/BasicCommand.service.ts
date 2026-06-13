@@ -11,6 +11,7 @@ import * as path from 'path';
 import * as fs from 'fs';
 import * as readline from 'readline/promises';
 import { stdin as input, stdout as output } from 'process';
+import { chunkIterator, parseRange } from './utils/cli-helpers';
 
 // 1. The Monadic Exception-as-Data ADT
 type Result<T, E = Error> = 
@@ -40,7 +41,7 @@ export class BasicCommand extends CommandRunner {
   async run(passedParams: string[], options?: BasicCommandOptions): Promise<void> {
     const inputPath = options?.input;
     const outputPath = options?.output;
-    const pageRange = options?.pages ? this.parseRange(options.pages) : null;
+    const pageRange = options?.pages ? parseRange(options.pages) : null;
     
     if (!inputPath) {
       this.logger.log('Error: Please provide an input file or directory using --input <path>');
@@ -97,7 +98,7 @@ export class BasicCommand extends CommandRunner {
       const BATCH_SIZE = 5;
       
       // 2. Consume the generator iterator into an array of batches safely
-      const batches = Array.from(this.chunkIterator(targetChunks, BATCH_SIZE));
+      const batches = Array.from(chunkIterator(targetChunks, BATCH_SIZE));
 
       const rawLeaves = await batches.reduce(async (accPromise, batch, index) => {
         const acc = await accPromise;
@@ -152,16 +153,6 @@ export class BasicCommand extends CommandRunner {
   }
 
   /**
-   * Safe Iterator/Generator Pattern. Emits data slices lazily without matrix iteration logic.
-   */
-  private *chunkIterator<T>(items: readonly T[], size: number): Generator<readonly T[]> {
-    const numBatches = Math.ceil(items.length / size);
-    yield* Array.from({ length: numBatches }, (_, i) => 
-      Object.freeze(items.slice(i * size, (i + 1) * size))
-    );
-  }
-
-  /**
    * Pure edge resolution for the credential payload
    */
   private async resolveApiKey(cliKey?: string): Promise<string | undefined> {
@@ -174,11 +165,6 @@ export class BasicCommand extends CommandRunner {
     rl.close();
     
     return promptedKey;
-  }
-
-  private parseRange(range: string) {
-    const [start, end] = range.split('-').map(Number);
-    return { start, end };
   }
 
   private renderTuiTree(tree: readonly ProcurementMatchDeliverable[]) {
