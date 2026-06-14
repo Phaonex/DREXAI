@@ -63,6 +63,16 @@ export interface LvPositionKey {
   readonly level3: string; // e.g., "02.01.001A"
 }
 
+/**
+ * Formal contract for semantic clustering results.
+ */
+export interface SemanticCluster {
+  readonly consolidatedBulletPoint: string;
+  readonly consolidatedDescription: string;
+  readonly consolidatedReasoning: string;
+  readonly originalNodes: readonly ProcurementMatchDeliverable[];
+}
+
 export const createLeaf = (data: Partial<ProcurementMatchDeliverable>): ProcurementMatchDeliverable => ({
   bulletPoint: '',
   description: { en: '' },

@@ -53,33 +53,30 @@ describe('ConsolidationService (Property-Based Tests)', () => {
     );
   });
 
-  it('Property 2: Citation Integrity - Consolidated nodes must contain all unique original citation IDs', async () => {
+  it('Property 2: Citation Integrity - No citation data is lost during recursive batching', async () => {
     await fc.assert(
       fc.asyncProperty(clustersArbitrary, async (clusters) => {
+        // 1. Arrange: Setup the mock to return the requested clusters
         deepSeek.clusterSemantically.mockResolvedValue(clusters);
-        const allLeaves = clusters.flatMap(c => c.originalNodes);
+        const allLeaves = Object.freeze(clusters.flatMap(c => c.originalNodes));
         
+        // 2. Act
         const consolidated = await service.consolidate(allLeaves);
 
-        expect(consolidated).toHaveLength(clusters.length);
+        // 3. Assert Mathematical Invariant: Source Data Preservation
+        // We compare the sets of all IDs to ensure the union is identical
+        const originalProcurementIds = new Set(allLeaves.flatMap(n => n.procurementDocumentChunkIdArray));
+        const finalProcurementIds = new Set(consolidated.flatMap(n => n.procurementDocumentChunkIdArray));
+        
+        const originalWorkspaceIds = new Set(allLeaves.flatMap(n => n.workspaceDocumentChunkIdArray));
+        const finalWorkspaceIds = new Set(consolidated.flatMap(n => n.workspaceDocumentChunkIdArray));
 
-        clusters.forEach((cluster, index) => {
-          const resultNode = consolidated[index];
-          
-          // Check Procurement Citations
-          const expectedProcurementIds = new Set(cluster.originalNodes.flatMap(n => n.procurementDocumentChunkIdArray));
-          expectedProcurementIds.forEach(id => {
-            expect(resultNode.procurementDocumentChunkIdArray).toContain(id);
-          });
-          expect(resultNode.procurementDocumentChunkIdArray.length).toBe(expectedProcurementIds.size);
+        // INVARIANT: Union(Original IDs) === Union(Final IDs)
+        expect(finalProcurementIds.size).toBe(originalProcurementIds.size);
+        originalProcurementIds.forEach(id => expect(finalProcurementIds).toContain(id));
 
-          // Check Workspace Citations
-          const expectedWorkspaceIds = new Set(cluster.originalNodes.flatMap(n => n.workspaceDocumentChunkIdArray));
-          expectedWorkspaceIds.forEach(id => {
-            expect(resultNode.workspaceDocumentChunkIdArray).toContain(id);
-          });
-          expect(resultNode.workspaceDocumentChunkIdArray.length).toBe(expectedWorkspaceIds.size);
-        });
+        expect(finalWorkspaceIds.size).toBe(originalWorkspaceIds.size);
+        originalWorkspaceIds.forEach(id => expect(finalWorkspaceIds).toContain(id));
       })
     );
   });

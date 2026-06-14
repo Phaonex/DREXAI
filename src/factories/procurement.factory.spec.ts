@@ -25,11 +25,11 @@ describe('ProcurementFactory (BONDIQ Strict Schema TDD)', () => {
     expect(node.priority).toBe('must'); // default
   });
 
-  it('BONDIQ CRITERIA: Physically prevents pollution of restricted fields', () => {
+  it('BONDIQ CRITERIA: Physically prevents pollution of restricted fields (except aiReasoning)', () => {
     // ARRANGE: A rogue payload trying to inject forbidden data
     const roguePayload = {
       bulletPoint: 'Provide cloud hosting',
-      aiReasoning: { en: 'Because I am an AI and I said so' }, // Forbidden
+      aiReasoning: { en: 'Legitimate explanation for quality audit' }, // Now allowed
       status: 'waitingForReview', // Forbidden override
       citedProductIdArray: ['prod_123'] // Forbidden
     } as any; // Cast as any to bypass TS just to test runtime immutability
@@ -38,7 +38,8 @@ describe('ProcurementFactory (BONDIQ Strict Schema TDD)', () => {
     const node = createProcurementNode(roguePayload);
 
     // ASSERT: The factory must ruthlessly strip the rogue data and enforce the spec
-    expect(node.aiReasoning).toBeNull();
+    // EXCEPT for aiReasoning which we've promoted to an allowed field.
+    expect(node.aiReasoning?.en).toBe('Legitimate explanation for quality audit');
     expect(node.status).toBe('waitingForAnalysis');
     expect(node.citedProductIdArray).toEqual([]);
   });

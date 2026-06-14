@@ -62,13 +62,17 @@ describe('TreeBuilderService (Property-Based Tests)', () => {
         
         const tree = await service.buildTree(leaves);
         
-        // Flatten the tree to get all leaves
-        const extractedLeaves: ProcurementMatchDeliverable[] = [];
-        tree.forEach(l1 => {
-          l1.deliverableArray.forEach(l2 => {
-            extractedLeaves.push(...l2.deliverableArray);
+        // Recursive flattener to find all L3 leaves regardless of depth
+        const findAllLeaves = (nodes: readonly ProcurementMatchDeliverable[]): ProcurementMatchDeliverable[] => {
+          return nodes.flatMap(node => {
+            // If it has no children, it's a leaf (L3)
+            if (node.deliverableArray.length === 0) return [node];
+            // Otherwise, recurse
+            return findAllLeaves(node.deliverableArray);
           });
-        });
+        };
+
+        const extractedLeaves = findAllLeaves(tree);
 
         expect(extractedLeaves).toHaveLength(leaves.length);
         // Compare bullet points as a proxy for identity

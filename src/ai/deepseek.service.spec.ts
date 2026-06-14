@@ -22,6 +22,8 @@ describe('DeepSeekService (BONDIQ Prompt Integrity TDD)', () => {
       JSON.stringify([
         {
           consolidatedBulletPoint: 'Provide ticket system with 4 hour SLA',
+          consolidatedDescription: 'Unified description of ticket system and SLA.',
+          consolidatedReasoning: 'Both items relate to support infrastructure.',
           originalNodeIndices: [0, 1]
         }
       ])
@@ -32,6 +34,8 @@ describe('DeepSeekService (BONDIQ Prompt Integrity TDD)', () => {
     expect(callSpy).toHaveBeenCalledTimes(1);
     expect(result).toHaveLength(1);
     expect(result[0].consolidatedBulletPoint).toBe('Provide ticket system with 4 hour SLA');
+    expect(result[0].consolidatedDescription).toBe('Unified description of ticket system and SLA.');
+    expect(result[0].consolidatedReasoning).toBe('Both items relate to support infrastructure.');
     expect(result[0].originalNodes).toHaveLength(2);
     expect(result[0].originalNodes[0]).toBe(leaf0);
     expect(result[0].originalNodes[1]).toBe(leaf1);
@@ -53,6 +57,33 @@ describe('DeepSeekService (BONDIQ Prompt Integrity TDD)', () => {
     expect(result[0].l1).toBe('IT Services');
     expect(result[0].l2).toBe('Infrastructure');
     expect(result[0].leaf).toBe(leaf0);
+  });
+
+  it('BONDIQ COMPLIANCE: extractLeaves must return full deliverable details (description, priority, confidence)', async () => {
+    const mockLlmResponse = JSON.stringify([
+      {
+        bulletPoint: '24/7 Support',
+        descriptionEn: 'The supplier must provide round-the-clock technical support.',
+        priority: 'must',
+        confidence: 'high',
+        equivalenceAllowed: false,
+        reasoningEn: 'Explicitly stated as a mandatory requirement in the text.'
+      }
+    ]);
+
+    jest.spyOn(deepSeekService as any, 'callLlm').mockResolvedValue(mockLlmResponse);
+
+    const result = await deepSeekService.extractLeaves('mock-key', 'some text', 'chunk-1');
+
+    expect(result.kind).toBe('Success');
+    if (result.kind === 'Success') {
+      const leaf = result.data[0];
+      expect(leaf.bulletPoint).toBe('24/7 Support');
+      expect(leaf.description.en).toBe('The supplier must provide round-the-clock technical support.');
+      expect(leaf.priority).toBe('must');
+      expect(leaf.confidence).toBe('high');
+      expect(leaf.equivalenceAllowed).toBe(false);
+    }
   });
 });
 // --- END OF FILE ---

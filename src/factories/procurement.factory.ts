@@ -43,9 +43,10 @@ export const createProcurementNode = (
       ? Object.freeze([...overrides.workspaceDocumentChunkIdArray]) 
       : DEFAULT_NODE.workspaceDocumentChunkIdArray,
 
-    // 3. THE BONDIQ VAULT: Ignore overrides, strictly bind to DEFAULT_NODE
+    // 3. THE BONDIQ VAULT: Strictly bind system-stage fields to DEFAULT_NODE
+    // EXCEPT aiReasoning which is required for extraction quality explanation.
     status: DEFAULT_NODE.status,
-    aiReasoning: DEFAULT_NODE.aiReasoning,
+    aiReasoning: overrides.aiReasoning || DEFAULT_NODE.aiReasoning,
     feedback: DEFAULT_NODE.feedback,
     feedbackText: DEFAULT_NODE.feedbackText,
     openQuestionId: DEFAULT_NODE.openQuestionId,

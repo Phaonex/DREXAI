@@ -46,5 +46,23 @@ describe('TreeBuilderService (BONDIQ Semantic TDD)', () => {
     expect(opsNode!.procurementDocumentChunkIdArray).toContain('chunk_A');
     expect(opsNode!.deliverableArray[0].procurementDocumentChunkIdArray).toContain('chunk_A');
   });
+
+  it('BONDIQ COMPLIANCE: should stay shallow (2 levels) when sub-groupings are redundant (e.g., L1 == L2)', async () => {
+    const leaf = createProcurementNode({ bulletPoint: 'Standard requirement' });
+
+    (mockDeepSeekService.categorizeLeaves as jest.Mock<any>).mockResolvedValueOnce([
+      { l1: 'General', l2: 'General', leaf: leaf }
+    ]);
+
+    const tree = await treeBuilder.buildTree([leaf]);
+
+    expect(tree).toHaveLength(1);
+    expect(tree[0].bulletPoint).toBe('General [Category]');
+    
+    // INVARIANT: If L2 is redundant, L3 should be directly under L1
+    // The current implementation will fail this by adding an L2 node in between
+    expect(tree[0].deliverableArray).toHaveLength(1);
+    expect(tree[0].deliverableArray[0].bulletPoint).toBe('Standard requirement');
+  });
 });
 // --- END OF FILE ---

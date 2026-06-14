@@ -1,7 +1,6 @@
-// --- START OF FILE: src/ai/deepseek.service.ts ---
 import { Injectable } from '@nestjs/common';
 import { LoggerService } from '../logger/logger.service';
-import { ProcurementMatchDeliverable } from '../types/procurement';
+import { ProcurementMatchDeliverable, LeafExtractionSchema, SemanticCluster } from '../types/procurement';
 import { createProcurementNode } from '../factories/procurement.factory';
 
 export type Result<T, E = Error> = 
@@ -24,41 +23,51 @@ export class DeepSeekService {
     this.logger.debug(`[DeepSeek] Extracting leaves from chunk: ${chunkId}`);
     
     try {
-      const prompt = `You are a procurement analyst. Extract the core requirements from this text. 
-      Return strictly a JSON array of objects with a single key 'bulletPoint'. 
-      Example: [{"bulletPoint": "Provide 24/7 support"}].
+      const prompt = `You are a procurement analyst. Extract every individual obligation and requirement from this tender text.
+      For each requirement, provide:
+      1. A short, concise name ('bulletPoint')
+      2. A detailed description in English ('descriptionEn')
+      3. Priority: 'must' (mandatory), 'should' (recommended), or 'optional'
+      4. Confidence: 'high', 'medium', or 'low'
+      5. equivalenceAllowed: boolean (true if 'or equivalent' is accepted, false otherwise, null if silent)
+      6. A brief AI reasoning for the extraction and priority ('reasoningEn')
+
+      Return strictly a JSON array of these objects. 
       Do NOT include markdown formatting, backticks, or explanations. Output pure JSON only.
+      
       Text data: ${text}`;
       
       const rawResponse = await this.callLlm(prompt, apiKey);
-
-      // 1. Pure Data Transformation: Strip hallucinatory markdown backticks
-      const cleanJson = rawResponse.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
-
-      // 2. Parse into unknown (Do not trust the data type yet)
-      const parsed: unknown = JSON.parse(cleanJson);
+      const parsed = this.safeJsonParse(rawResponse);
 
       // 3. Strict Schema Validation (Data-Driven Guardrail)
-      if (!Array.isArray(parsed) || !parsed.every(item => 
-          typeof item === 'object' && 
-          item !== null && 
-          'bulletPoint' in item && 
-          typeof (item as any).bulletPoint === 'string'
-      )) {
-        throw new Error('LLM output schema violation: Expected Array<{ bulletPoint: string }>');
+      if (!Array.isArray(parsed)) {
+        throw new Error('LLM output schema violation: Expected an array of requirements');
       }
 
-      // 4. Pure Mapping: Safely instantiate nodes with deep-frozen arrays
-      const leaves = parsed.map((item: { bulletPoint: string }) => createProcurementNode({
-        bulletPoint: item.bulletPoint,
-        procurementDocumentChunkIdArray: Object.freeze([chunkId])
-      }));
+      // 4. Pure Mapping: Safely instantiate nodes with domain validation
+      const leaves = parsed.flatMap((item: unknown) => {
+        const result = LeafExtractionSchema.safeParse(item);
+        
+        if (!result.success) {
+          this.logger.warn(`[DeepSeek] Skipping invalid requirement: ${JSON.stringify(result.error.format())}`);
+          return [];
+        }
 
-      // Return the mathematically safe Success state
+        const validated = result.data;
+        return [createProcurementNode({
+          bulletPoint: validated.bulletPoint,
+          description: { en: validated.descriptionEn },
+          priority: validated.priority,
+          confidence: validated.confidence,
+          equivalenceAllowed: validated.equivalenceAllowed,
+          procurementDocumentChunkIdArray: Object.freeze([chunkId])
+        })];
+      });
+
       return { kind: 'Success', data: Object.freeze(leaves) };
       
     } catch (error) {
-      // Trap the explosion and return a mathematically safe Failure state
       const errorMessage = error instanceof Error ? error.message : String(error);
       this.logger.error(`[DeepSeek] Extraction failed for chunk ${chunkId}: ${errorMessage}`);
       
@@ -70,24 +79,61 @@ export class DeepSeekService {
   }
 
   /**
-   * PHASE 2: Semantically clusters leaves by asking the LLM to group indices.
+   * PHASE 2: Semantically clusters leaves and synthesizes unified descriptions.
+   * BONDIQ COMPLIANT: Groups requirements from scattered pages and merges their technical specs.
    */
   async clusterSemantically(
     leaves: readonly ProcurementMatchDeliverable[],
     apiKey?: string
-  ): Promise<Array<{ consolidatedBulletPoint: string; originalNodes: ProcurementMatchDeliverable[] }>> {
-    this.logger.debug(`[DeepSeek] Clustering ${leaves.length} items...`);
+  ): Promise<readonly SemanticCluster[]> {
+    this.logger.debug(`[DeepSeek] Clustering and synthesizing ${leaves.length} items...`);
     
-    const tokenOptimizedPayload = leaves.map((leaf, index) => ({ index, text: leaf.bulletPoint }));
-    const prompt = `Group these items semantically. Return JSON array of { "consolidatedBulletPoint": "...", "originalNodeIndices": [0, 1] }. Data: ${JSON.stringify(tokenOptimizedPayload)}`;
+    const tokenOptimizedPayload = leaves.map((leaf, index) => {
+      // Extract the filename from the first chunk ID for context to prevent cross-tender leaks
+      const sourceFile = leaf.procurementDocumentChunkIdArray.length > 0
+        ? Buffer.from(leaf.procurementDocumentChunkIdArray[0], 'base64').toString().split('-').shift()
+        : 'Unknown Source';
+
+      return { 
+        index, 
+        sourceFile,
+        bulletPoint: leaf.bulletPoint,
+        description: leaf.description.en,
+        priority: leaf.priority
+      };
+    });
+
+    const prompt = `You are a procurement consolidation expert. Group these requirements semantically.
+    Requirements from different pages often describe the same obligation or add technical detail to it.
+    
+    CRITICAL: Only merge items if they genuinely belong to the same technical requirement. 
+    Use the 'sourceFile' context to avoid merging requirements from unrelated tenders unless they are identical.
+
+    For each cluster, provide:
+    1. 'consolidatedBulletPoint': A single, unified name for the requirement.
+    2. 'consolidatedDescription': A single, cohesive technical description that merges all specifications from the grouped items without redundancy.
+    3. 'consolidatedReasoning': A brief explanation of why these were merged and the importance of this requirement.
+    4. 'originalNodeIndices': The array of indices from the input data that belong to this cluster.
+
+    Return strictly a JSON array of these cluster objects.
+    Data: ${JSON.stringify(tokenOptimizedPayload)}`;
     
     const responseJson = await this.callLlm(prompt, apiKey);
-    const parsed = JSON.parse(responseJson) as Array<{ consolidatedBulletPoint: string; originalNodeIndices: number[] }>;
+    const parsed = this.safeJsonParse(responseJson) as Array<{ 
+      consolidatedBulletPoint: string; 
+      consolidatedDescription: string; 
+      consolidatedReasoning: string;
+      originalNodeIndices: number[] 
+    }>;
     
-    return parsed.map(cluster => ({
+    const clusters = parsed.map(cluster => ({
       consolidatedBulletPoint: cluster.consolidatedBulletPoint,
-      originalNodes: cluster.originalNodeIndices.map(idx => leaves[idx])
+      consolidatedDescription: cluster.consolidatedDescription,
+      consolidatedReasoning: cluster.consolidatedReasoning,
+      originalNodes: Object.freeze(cluster.originalNodeIndices.map(idx => leaves[idx]))
     }));
+
+    return Object.freeze(clusters);
   }
 
   /**
@@ -103,7 +149,11 @@ export class DeepSeekService {
     const prompt = `Categorize these items. Return JSON array of { "l1": "Category", "l2": "SubCategory", "leafIndex": 0 }. Data: ${JSON.stringify(tokenOptimizedPayload)}`;
     
     const responseJson = await this.callLlm(prompt, apiKey);
-    const parsed = JSON.parse(responseJson) as Array<{ l1: string; l2: string; leafIndex: number }>;
+    const parsed = this.safeJsonParse(responseJson) as Array<{ 
+      l1: string; 
+      l2: string; 
+      leafIndex: number 
+    }>;
     
     return parsed.map(item => ({
       l1: item.l1,
@@ -113,10 +163,52 @@ export class DeepSeekService {
   }
 
   /**
-   * The actual network boundary interacting with the real DeepSeek API.
-   * Fallback to process.env.DEEPSEEK_KEY if not explicitly passed by the CLI.
+   * Robust JSON parsing with sanitization and self-healing.
+   * Handles common LLM errors like unescaped quotes or token-limit truncation.
    */
-  private async callLlm(prompt: string, apiKey?: string): Promise<string> {
+  private safeJsonParse(input: string): any {
+    // 1. Strip potential markdown code blocks
+    let cleaned = input.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+
+    try {
+      return JSON.parse(cleaned);
+    } catch (e) {
+      this.logger.warn(`[DeepSeek] Initial JSON parse failed. Attempting structural repair...`);
+      
+      // 2. Truncation Recovery: If the LLM hit a token limit and cut off mid-JSON
+      if (!cleaned.endsWith(']') && !cleaned.endsWith('}')) {
+        const lastCompleteObject = cleaned.lastIndexOf('}');
+        if (lastCompleteObject !== -1) {
+          this.logger.warn(`[DeepSeek] Detected truncated JSON. Recovering items up to position ${lastCompleteObject}...`);
+          const recovered = cleaned.substring(0, lastCompleteObject + 1) + ']';
+          try {
+            return JSON.parse(recovered);
+          } catch (innerErr) {
+            // If recovery fails, fall through to quote repair
+          }
+        }
+      }
+
+      try {
+        // 3. Structural Repair Stage: Escape unescaped double quotes in values
+        cleaned = cleaned.replace(/":\s*"(.*?)"(\s*[,}]) /g, (match, value, suffix) => {
+          const escapedValue = value.replace(/"/g, '\\"');
+          return `": "${escapedValue}"${suffix}`;
+        });
+        
+        return JSON.parse(cleaned);
+      } catch (innerError) {
+        this.logger.error(`[DeepSeek] Critical JSON Malformation: ${cleaned}`);
+        throw new Error(`LLM returned malformed JSON that could not be repaired: ${(e as Error).message}`);
+      }
+    }
+  }
+
+  /**
+   * The actual network boundary interacting with the real DeepSeek API.
+   * Includes a simple retry mechanism with exponential backoff for resilience.
+   */
+  private async callLlm(prompt: string, apiKey?: string, retries = 3): Promise<string> {
     const key = apiKey || process.env.DEEPSEEK_KEY;
     if (!key) {
       throw new Error('DeepSeek API key is missing. Pass it via CLI or set DEEPSEEK_KEY env var.');
@@ -142,15 +234,25 @@ export class DeepSeekService {
       });
 
       if (!response.ok) {
+        if (response.status === 429 && retries > 0) {
+          this.logger.warn(`[DeepSeek] Rate limited (429). Retrying in 2s...`);
+          await new Promise(res => setTimeout(res, 2000));
+          return this.callLlm(prompt, apiKey, retries - 1);
+        }
         throw new Error(`DeepSeek API Error: ${response.status} ${response.statusText}`);
       }
 
-      const data = await response.json();
+      const data = await response.json() as any;
       return data.choices[0].message.content;
     } catch (error) {
-      this.logger.error(`[DeepSeek] Network call failed: ${error}`);
+      if (retries > 0) {
+        this.logger.warn(`[DeepSeek] Network glitch (${(error as Error).message}). Retrying...`);
+        // Exponential backoff: 1s, 2s, 3s...
+        await new Promise(res => setTimeout(res, 1000 * (4 - retries)));
+        return this.callLlm(prompt, apiKey, retries - 1);
+      }
+      this.logger.error(`[DeepSeek] Network call failed after retries: ${error}`);
       throw error;
     }
   }
 }
-// --- END OF FILE ---

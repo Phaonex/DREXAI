@@ -26,22 +26,41 @@ export class TreeBuilderService {
       const l1Items = categorizedLeaves.filter(c => c.l1 === l1Key);
       const uniqueL2Keys = Array.from(new Set(l1Items.map(c => c.l2)));
 
-      const l2Children = uniqueL2Keys.map(l2Key => {
+      const { l2Children, directL3Children } = uniqueL2Keys.reduce((acc, l2Key) => {
         const l3Leaves = l1Items.filter(c => c.l2 === l2Key).map(c => c.leaf);
 
-        return createProcurementNode({
+        // Adaptive Leveling: If L2 matches L1, it is redundant. Promote L3 directly to L1.
+        if (l2Key.toLowerCase() === l1Key.toLowerCase()) {
+          return { 
+            ...acc, 
+            directL3Children: [...acc.directL3Children, ...l3Leaves] 
+          };
+        }
+
+        const l2Node = createProcurementNode({
           bulletPoint: `${l2Key} [Sub-Category]`,
           deliverableArray: l3Leaves,
           procurementDocumentChunkIdArray: this.mergeUnique(l3Leaves.flatMap(c => c.procurementDocumentChunkIdArray)),
           workspaceDocumentChunkIdArray: this.mergeUnique(l3Leaves.flatMap(c => c.workspaceDocumentChunkIdArray)),
         });
-      });
+
+        return { 
+          ...acc, 
+          l2Children: [...acc.l2Children, l2Node] 
+        };
+      }, { l2Children: [] as ProcurementMatchDeliverable[], directL3Children: [] as ProcurementMatchDeliverable[] });
 
       return createProcurementNode({
         bulletPoint: `${l1Key} [Category]`,
-        deliverableArray: l2Children,
-        procurementDocumentChunkIdArray: this.mergeUnique(l2Children.flatMap(c => c.procurementDocumentChunkIdArray)),
-        workspaceDocumentChunkIdArray: this.mergeUnique(l2Children.flatMap(c => c.workspaceDocumentChunkIdArray)),
+        deliverableArray: [...l2Children, ...directL3Children],
+        procurementDocumentChunkIdArray: this.mergeUnique([
+          ...l2Children.flatMap(c => c.procurementDocumentChunkIdArray),
+          ...directL3Children.flatMap(c => c.procurementDocumentChunkIdArray)
+        ]),
+        workspaceDocumentChunkIdArray: this.mergeUnique([
+          ...l2Children.flatMap(c => c.workspaceDocumentChunkIdArray),
+          ...directL3Children.flatMap(c => c.workspaceDocumentChunkIdArray)
+        ]),
       });
     });
 
