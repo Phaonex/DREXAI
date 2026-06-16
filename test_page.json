@@ -1,0 +1,290 @@
+[
+  {
+    "bulletPoint": "Christmas Lights [Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "Installation, Maintenance, and Removal [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Christmas Lights Installation, Maintenance, and Removal",
+            "description": {
+              "en": "Install Christmas lights in Broseley Town annually, including specific installations: 23 sets of pea lights in the memorial garden, 1 set of lights on the fir tree in the memorial garden, 1 set of pea lights on the tree on the square, features to poles in the memorial garden, a 'welcome to Broseley' sign across the high street, festoons on Harwood's building and the butcher's shop, string lights from church street to the social club, and 2 snow fall column motifs. Maintain the lights throughout the installation period with two scheduled run-throughs to check functionality and attend to minor faults. Dismantle and remove all lights after the festival period, as soon as possible after 6 January but no later than 12 January each year. The contractor must be present on Saturday 28 November 2026 to manually switch on the lights after a countdown, and after switch-on, set automatic timers: on at 4pm, off at 10pm weekdays, and 4pm to 11pm weekends. Provide the cost of all-inclusive call outs during the festival period for lights erected and maintenance checks, with call out within 24 hours for major faults including complete motif or light string failure, vandalism, storms, or road traffic accident. Additional call out charges must be stated on the schedule."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "These items all pertain to the lifecycle of the Christmas lights: installation, maintenance, dismantling, and specific installation details. Merging them provides a comprehensive view of the contractor's responsibilities regarding the lights."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      },
+      {
+        "bulletPoint": "Testing and Safety Compliance [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Testing and Safety Compliance",
+            "description": {
+              "en": "Test the Christmas lights to ensure they are safe and functional, including electric testing of all lights to current standards, testing of all electric feeder pillars, and checking all anchor points. All lights and features must be fully functioning prior to installation. Test lights and features during downtime and undertake minor work such as replacing bulbs and fixing faulty connections. Notify BTC immediately of any defective items requiring major repair at additional cost. Erection, testing, and maintenance must be carried out in accordance with the latest Wiring Regulations (BS 7671) by a competent person. Comply with all relevant health and safety legislation and take measures to minimize risk to the public. Produce a Health & Safety Information document including Risk Assessment and Method Statement before installation. Provide General Health & Safety at Work Policy, accreditation certificates, and staff training certificates."
+            },
+            "priority": "must",
+            "confidence": "medium",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "These items focus on testing, safety, and compliance with regulations. Merging them ensures all testing and safety obligations are clearly defined and linked."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNQ=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "Tender Process [Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "Submission Requirements [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Tender Submission Requirements",
+            "description": {
+              "en": "Submit a price that fits within the budget, offering high quality and value for money. Provide evidence of ability to deliver similar projects to a high quality, satisfactory references, and a copy of the current public liability insurance certificate. The tender must be fully inclusive of all costs, including any costs arising from site visits and access arrangements. All items must be costed individually. Tenders are to be submitted in writing in a sealed marked envelope addressed to the Town Clerk, clearly marked 'Tender'. Provide a copy of the Highway Electrical Registration Scheme certificate, details of proposed LEDs and product warranty information, and any other pertinent documents or certificates. Comply with all written requirements in the tender and with Standing Order 17 and the Bribery Act 2010. No contractor shall contact councillors or staff to encourage or support their tender outside the prescribed process. All tenders will be considered by the Town Council on 9 June 2026 and will receive a response week commencing 15 June 2026."
+            },
+            "priority": "must",
+            "confidence": "medium",
+            "equivalenceAllowed": false,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNQ=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "These items cover all aspects of the tender submission process, including pricing, documentation, compliance, and deadlines. Merging them provides a complete picture of what is required from the contractor when submitting a tender."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNQ=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNA==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtNQ=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "Contract Management [Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": null,
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "Variations [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": null,
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "Contract Management and Variations",
+            "description": {
+              "en": "Any variations to the contract must be notified to the Contractor by the Town Clerk and agreed in writing between both parties. A Town Council representative will monitor the work regularly, and any concerns will be reported to the Town Clerk who will agree an appropriate course of action with the Contractor. The contractor is expected to have made any necessary site visits prior to submitting a tender to satisfy themselves of access arrangements and any other necessary information. Work must be undertaken with little disruption to vehicular and pedestrian traffic, and with consideration for the environment. Utilize local resources and skills in the project."
+            },
+            "priority": "must",
+            "confidence": "medium",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "These items relate to the ongoing management of the contract, including variations, monitoring, site visits, and operational considerations. Merging them clarifies the contractor's obligations during the contract period."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMQ==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMg==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL0RSRVhBSS9kb2NzL1RlbmRlcl9Gb3JfQ2hyaXN0bWFzX0xpZ2h0c19JbnN0YWxsYXRpb25fMjAyNi5wZGYtMw=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  }
+]

@@ -1,0 +1,2580 @@
+[
+  {
+    "bulletPoint": "01 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "01.01.0010 Excavation",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "01.01.0010 Excavation",
+            "description": {
+              "en": "Protection of drinking water against non-drinking water: For each laboratory line (with cold or hot water connection), the contractor must provide a pipe separator with controllable intermediate pressure zone (Group B, Type A) according to DIN EN 1717 for safeguarding up to and including fluid category 4 for both cold and hot water. Installation by the contractor must be according to DIN EN 1717, all necessary shut-off valves and pipelines (including connection to the wastewater line) are to be included. The pipe separators are part of the media cell and are not separately listed in the performance schedule! The pipe separators are to be arranged in the media cell so that they are easily accessible for maintenance purposes. The installation location is to be marked on the media cell panel (above the table top). A data sheet of the offered pipe separator must be attached to the offer! In cases where fluid category 5 is expected, pipe interrupters of open design A1 are to be provided; these are separately listed as a position in the specification. A data sheet of the offered pipe interrupter must be attached to the offer.",
+              "de": "Aushub für Laborgebäudefundament"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Standard construction requirement, likely a must for project execution."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE=",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk=",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE1",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE2",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI1",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQ1",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTc1",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTgy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTExNg==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIwMg==",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0020 Medienzellen mit wenigen Stoßstellen",
+            "description": {
+              "en": "In the media channel, a fuse box with a transparent cover for RCDs and MCBs for the socket circuits is installed. Low-voltage cabling must be routed separately in the channel so that no contact with high-voltage cabling can occur. The low-voltage empty conduits are part of the scope of delivery of the laboratory furniture supplier and are included in the plans. Cabling in the channel up to the empty conduit is to be carried out by the laboratory furniture supplier (bending radii must be observed!). The electrical channels are to be executed completely wired including RCD (AC-sensitive, short-time delayed type G, surge-proof up to 3kA, with nominal value pre-fusible) and MCB (characteristic B), whereby a maximum of six Schuko sockets for 230V (protection 16A / B) are combined and protected on one circuit. Three-phase sockets for 400V (protection 16 or 32A / B) are to be protected individually. The power supply of the outlets must be via cables and plug connections so that expansions or reductions of outlets are possible without rewiring!",
+              "de": "Medienzellen sollen mit möglichst wenigen Stoßstellen ausgeführt werden, und dürfen auch über die Abmessungen von Unter- und Oberschränken hinausgehen. Jedoch muss die Flexibilität in der Anordnung von Tablaren, etc. gewährleistet bleiben."
+            },
+            "priority": "should",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "The word 'sollen' indicates a should requirement, while 'muss' for flexibility is a must."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk=",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE1",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE2",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI1",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQ1",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0030 Anschluss aller Leitungen durch Auftragnehmer",
+            "description": {
+              "en": "Front edges of body, fronts, and shelves must be made of rounded PP (2-3mm thick). All other edges must have approx. 0.4mm thin PP edge. All edges, even in non-visible areas, must be treated with a deeply penetrating liquid coating in the color of adjacent surfaces. Side inner surfaces must have grid holes at approx. 32mm spacing for fittings, shelves, and drawer guides. Hinges must allow 270° opening and be three-dimensionally adjustable. Underframes must have metal handle grips. Each door must have a handle element. Handle shells, continuous handle rails, etc. are not permitted for hygienic reasons. Underframes must have labeling fields with a holder for a label covered by a clear film.",
+              "de": "Der Anschluss aller Leitungen an das Ver- und Entsorgungsnetz hat durch den Auftragnehmer zu erfolgen."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "The phrase 'hat durch den Auftragnehmer zu erfolgen' indicates a mandatory requirement."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk=",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE1",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE2",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI1",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0040 Gas- und Wasserleitungen senkrecht einführen",
+            "description": {
+              "en": "Drawers must be full extension with telescopic guide, self-closing, and tilt-free. Drawer frame must be powder-coated steel (1.0mm thickness). Roller or telescopic guide must be ball-bearing. Guide must be covered for hygienic reasons. Drawer fronts must be removable for cleaning. Drawer back and bottom must be double-sided plastic-coated melamine resin flat press board, 16mm thick, according to DIN 68765. Drawers or pull-outs have a minimum load capacity of approx. 30 kg. Different load capacities are explicitly mentioned in individual text. Mobile underframes with drawers must have an alternating pull-out lock. Restriction of drawer heights due to installation of alternating pull-out lock is not permitted. For drawers with 2 height units (HE), both front plate and drawer must be executed in 2HE. Drawers must be equipped with a variable divider set (2x longitudinal and 2x transverse dividers) made of coated solid core laminate. If required in the LV, doors and single drawers of underframe elements must be lockable with cylinder locks.",
+              "de": "Gas- und Wasserleitungen enden mit Kugelhähnen in ca. 275 - 285cm über FFBOK im Bereich oberhalb der Laborzeile. Ab dieser Schnittstelle obliegt die Leitungsführung dem Auftragnehmer. Die Gas- und Wasserleitungen sind ab der Schnittstelle senkrecht von oben in das Labormöbel einzuführen, ggf. ist das Möbel (Traggestell, Medienzelle) entsprechend anzupassen, um diese senkrechte Leitungsführung zu ermöglichen (im Sichtbereich sind keine gekröpften Zuleitungen zulässig)."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "The requirement uses 'sind einzuführen' and 'sind nicht zulässig', indicating mandatory obligations."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk=",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE2",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI1",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0050 Elektroversorgung: Kabel von oben in Laborzeile führen",
+            "description": {
+              "en": "Each laboratory bench or bench group is electrically supplied with a 5x6mm² cable from the building side. This cable must be routed by the contractor from the transfer point (see floor plans) from above into the laboratory bench.",
+              "de": "Jede Laborzeile bzw. jeder Laborzeilenverband wird elektrisch mit einem bauseitigen 5x6mm²- Kabel angespeist. Dieses Kabel ist vom Auftragnehmer, ausgehend vom Übergabepunkt (siehe Grundrisspläne) von oben in die Laborzeile zu führen."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "The phrase 'ist vom Auftragnehmer zu führen' indicates a mandatory requirement."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk=",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE2",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0060 Kabelführung senkrecht und farblich angepasst",
+            "description": {
+              "en": "Some consumers in the building are supplied via emergency power supply. For this, a 5x6mm² cable ends analogously to the above description, which must be routed by the laboratory furniture manufacturer to the connection terminals in the furniture in the manner described above. The Schuko sockets connected to the emergency power supply must be supplied in a colored version (color according to the specification of the electrical contractor); coordination in this regard is the responsibility of the contractor.",
+              "de": "Die Kabelführung ab der Schnittstelle bis ins Möbel hat dabei - analog zu Gas- und Wasserleitungen - senkrecht zu verlaufen. Die Farbgebung dieser Kabelführung hat jener des Traggestells zu entsprechen (Ausnahme: verläuft diese Kabelführung an der Wand, so ist diese bis zur Einleitung in das Labormöbel weiß auszuführen). Ggf. ist diese Kableführung an der Rohdecke zu befestigen, sodass ein senkrechter Verlauf sichergestellt ist."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "The requirement uses 'hat senkrecht zu verlaufen' and 'ist weiß auszuführen', indicating mandatory obligations."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk=",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE2",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0070 Elektrokanäle mit Einbauten inkl. Sicherungskasten",
+            "description": {
+              "en": "Ventilation ducts end primarily at 290 cm above finished floor as free pipe ends in a dimension corresponding to the exhaust air volume in the area above the equipment to be connected (if the suspended ceiling height is lower, the ventilation ducts end correspondingly lower under the suspended ceiling). The connection must be made by the contractor. Any adaptations and dimensional adjustments must be carried out by the contractor. Coordination regarding any necessary coordination points with the ventilation trade is the responsibility of the contractor.",
+              "de": "Elektrokanäle mit Einbauten inkl. Sicherungskasten mit FI-Schutzschalter und Leitungsschutzschaltern für die Endstromkreise sind ebenfalls im Leistungsumfang des Auftragnehmers erfasst."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "The phrase 'sind im Leistungsumfang erfasst' indicates a mandatory scope item."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk=",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE2",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0080 Anschluss an Anschlussklemmen durch Auftragnehmer",
+            "description": {
+              "en": "Execution according to the performance description, either in stainless steel or coated sheet steel. The shelves of the racks are to be height-adjustable. Rack depth according to performance description, whereby the specified depth dimensions are to be understood as minimum dimensions. The racks must be equipped with metal feet that have a sufficiently large contact surface to prevent damage to the floor (pure L-angle metal profiles are not permitted). The metal feet must be able to compensate for any floor unevenness (leveling device). Racks are to be connected to each other to form stable units and generally fastened to the wall (anti-tip protection). Technical documents of the offered racks are to be attached to the offer!",
+              "de": "Der Anschluss an die Anschlussklemmen im Labormöbel hat durch den Auftragnehmer zu erfolgen."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "The phrase 'hat durch den Auftragnehmer zu erfolgen' indicates a mandatory requirement."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk=",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE2",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0090 Separate Versorgungskabel analog verlegen",
+            "description": {
+              "en": "Installation work in laboratory furniture by the contractor: complete piping (including connection) of water and gas supply lines to and within the furniture, from the defined interfaces to the connection point of the fittings; complete piping (including connection) of wastewater lines from basin drain to the junction into the building's wastewater line; routing and laying of power and low-voltage lines (including suspensions, cable ducts, etc.) from the interfaces to the connection point in the fuse box of the media channel.",
+              "de": "Werden in einer Laborzeile Geräte, wie z.B. Laborglasspüler, etc. eingebaut, so ist das ggf. zusätzlich vorhandene separate bauseitige Versorgungskabel analog zu oben an die entsprechende Stelle im Labormöbelverbau zu verlegen (dies gilt auch für Zuleitungen aus dem Netz der Sicherheitsstrom-versorgung)."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "The phrase 'ist zu verlegen' indicates a mandatory requirement."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk=",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE2",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0100 Lieferung und Einbau von Steckdosen",
+            "description": {
+              "en": "All fume cupboards should have the possibility of an underbench extraction for connecting a safety cabinet on the exhaust side. This extraction must not affect the positioning of the media arranged in the fume cupboard. The exhaust duct is to be mounted behind the baffle and ends as a nozzle above the fume cupboard. If normal underbench cabinets are used instead of safety cabinets, they must also be connected to the underbench extraction by suitable measures.",
+              "de": "Die Lieferung und der Einbau von Steckdosen zum Anschluss der erwähnten Geräte ist im Leistungsumfang des Auftragnehmers erfasst."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "The phrase 'ist im Leistungsumfang erfasst' indicates a mandatory scope item."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk=",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE2",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0110 Koordination mit Gewerk Elektro",
+            "description": {
+              "en": "Minimum requirements (to prove equivalence): If the reference product is not offered, equivalence of the offered plate material must be demonstrated based on the following minimum requirements: - Plate material phenolic resin solid core - Worktop for chemical, biological and physical laboratories. - Decor surface with highly densified surface structure and 24-hour chemical resistance against concentrated acids and dyes. - Scratch resistance grade equal to or greater than 4 Newton according to EN 438-2:14. - Plate core based on resin-reinforced cellulose fibers and has a black edge. - Chemical resistance and stain insensitivity for the following substances must be proven by test certificates (issued by independent test labs) to be enclosed with the offer: No perceptible staining, no loss of gloss, or no change to the worktop surface after 24-hour exposure to: Hydrochloric acid (37%), Sulfuric acid (33%), Nitric acid (30%), Phosphoric acid (85%), Acetic acid (99%), Chromic acid (60%), Sodium chloride (10%), Formaldehyde (37%), Acetone, Ethyl alcohol.",
+              "de": "Die Koordination bzgl. der Auslegung der Absicherungen und FI-Schalter mit dem Gewerk Elektro hat durch den Auftragnehmer zu erfolgen (ausschlaggebend für die Selektivität ist die Vorsicherung des bauseitigen Anspeisekabels)."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "The phrase 'hat durch den Auftragnehmer zu erfolgen' indicates a mandatory requirement."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk=",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE5",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0120 Utensilienauszug",
+            "description": {
+              "en": "Media wings: These items describe media supply systems (for electrical, sanitary, and gas supply) which are to be suspended from the ceiling via suitable constructions, thus supplying media while maintaining maximum flexibility regarding the arrangement of equipment and tables on the floor. These systems are to be visually matched to the other media supply systems and also technically executed analogously. All required substructures/suspension devices/transfers are included.",
+              "de": "Für Unterbauten bei Schreibarbeitsplätzen kann zusätzlich ein Utensilienauszug erforderlich sein."
+            },
+            "priority": "optional",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "The phrase 'kann ... erforderlich sein' indicates it is optional, depending on specific needs."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEz",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE3",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0130 Leichtgängigkeit und Arretierung",
+            "description": {
+              "en": "The containment performance of the fume hood: The pollutant concentrations in the inner measurement plane, outer measurement plane and robustness of the containment must be stated with the corresponding volume flow.",
+              "de": "Die Leichtgängigkeit des Schiebefensters und die Höhenarretierung in jeder Stellung muss gewährleisten sein."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Explicit 'muss' requirement for functionality."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0140 Einhandbedienung",
+            "description": {
+              "en": "For the average tracer gas maximum values jmax (SF6) and tracer gas peak values (SF6 measurement peaks) to be determined in the outer measurement plane, the following values apply (to be determined according to DIN EN 14175-3:2003, section 5.3): - Average: jR, max(SF6) = 0.65 ppm - Peak value for SF6 measurement peaks in phases 2 and 4: 3 * 0.65 ppm - Peak value for SF6 measurement peaks in phases 3 and 5: 5 * 0.65 ppm. For the robustness test, the following maximum values apply (to be determined according to DIN EN 14175-3:2003, section 5.4): - Average: jR, max(SF6) = 0.65 ppm - Peak value for SF6 measurement peaks: 5 * 0.65 ppm. The mentioned maximum tracer gas values must be achieved at a volume flow of less than or equal to 600 m3/h per linear meter of access width.",
+              "de": "Die Schiebefensterbedienung, auch über eine Öffnungshöhe von 500mm hinaus, muss mit einer Hand möglich sein."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Explicit 'muss' requirement for one-hand operation."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0150 Rückhaltevermögen",
+            "description": {
+              "en": "The containment performance of the fume hood: pollutant concentrations in inner measurement plane, outer measurement plane and robustness of containment must be stated with the corresponding volume flow.",
+              "de": "Rückhaltevermögen des Abzuges: Die Schadstoffkonzentrationen innere Messebene, äußere Messebene und Robustheit des Rückhaltevermögens sind unter Nennung des dazugehörigen Volumenstroms anzugeben."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Mandatory specification of performance values."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0160 Grenzwerte Rückhaltevermögen",
+            "description": {
+              "en": "For the averaged tracer gas maximum values jmax (SF6) and tracer gas peak values (SF6 measurement peaks) to be determined in the outer measurement plane, the following values apply (to be determined according to DIN EN 14175-3:2003, section 5.3): - Mean value: jR, max(SF6) = 0.65 ppm - Peak value for SF6 measurement peaks in phases 2 and 4: 3 * 0.65 ppm - Peak value for SF6 measurement peaks in phases 3 and 5: 5 * 0.65 ppm. For the robustness test, the following maximum values apply (to be determined according to DIN EN 14175-3:2003, section 5.4): - Mean value: jR, max(SF6) = 0.65 ppm - Peak value for SF6 measurement peaks: 5 * 0.65 ppm.",
+              "de": "Für die in der äußeren Messebene zu bestimmenden, gemittelten Spürgas-Höchstwerte jmax (SF6) und Spürgas-Spitzenwerte (SF6-Messpeaks) gelten folgende Werte (zu bestimmen nach DIN EN 14175-3:2003, Abschnitt 5.3): - Mittelwert: jR, max(SF6) = 0,65 ppm - Spitzenwert für SF6-Messpeaks in den Phasen 2 und 4: 3 * 0,65 ppm - Spitzenwert für SF6-Messpeaks in den Phasen 3 und 5: 5 * 0,65 ppm. Für die Prüfung der Robustheit gelten folgende maximale Werte (zu bestimmen nach DIN EN 14175-3:2003, Abschnitt 5.4): - Mittelwert: jR, max(SF6) = 0,65 ppm - Spitzenwert für SF6-Messpeaks: 5 * 0,65 ppm."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Explicit numerical limits, mandatory compliance."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0170 Anzeigefeld Funktionen",
+            "description": {
+              "en": "The display panel must fulfill the following functions: air technical function (no malfunction: green, malfunction: red including acoustic signal), operating mode indication (variable, reduced, increased), supply voltage failure, registration for night operation.",
+              "de": "Anzeigefunktion: lufttechnische Funktion (Keine Fehlfunktion: grün, Fehlfunktion: rot inkl. akustisches Signal), Betriebsartenmeldung (variabel, abgesenkt, erhöht), Versorgungsspannungsausfall, Anmeldung zum Nachtbetrieb"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Listed as required functions under the mandatory display panel requirement."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0180 Warnsignal bei Schiebefensteröffnung",
+            "description": {
+              "en": "Exceeding the permissible sliding window opening (500mm) must trigger an optical (yellow LED) and acoustic warning signal. The acoustic alarm signal must be acknowledgeable. The optical alarm signal extinguishes automatically when the sliding window opening height falls below 500mm.",
+              "de": "Die Überschreitung der zulässigen Schiebefenster-öffnung (500mm) erfolgt durch ein optisches (gelbe LED) und akustisches Warnsignal. Das akustische Alarmsignal ist quittierbar zu gestalten. Das optische Alarmsignal erlischt selbstständig, wenn die Schiebefensteröffnungshöhe 500mm unterschreitet."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Uses 'ist zu gestalten' indicating a mandatory requirement."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0190 Relaisausgänge",
+            "description": {
+              "en": "Relay outputs must be provided for forwarding the operating message (On/Off), alarm message, and volume flow value (2 to 10V).",
+              "de": "Zur Weiterleitung der Betriebsmeldung (Ein / Aus), der Alarmmeldung und der Volumenstromgröße (2 bis 10V) sind Relaisausgänge zur Verfügung zu stellen."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Uses 'sind zur Verfügung zu stellen' indicating a mandatory requirement."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0200 Betriebsanzeige in Verblendung installiert",
+            "description": {
+              "en": "Operating display installed in a panel mounted on the bottle cabinet.",
+              "de": "Die Betriebsanzeige (Anzeige von Umschaltung und Leermeldung) ist in einer auf den Flaschenschrank aufgesetzten Verblendung zu installieren."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Specific installation requirement."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0210 Anschluss der Betriebsanzeige durch AN",
+            "description": {
+              "en": "Connection of the operating display by the contractor.",
+              "de": "Der Anschluss hat durch den AN zu erfolgen."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Contractor responsibility."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0220 Technische Daten: Vordruck max. 200*10^5 Pa",
+            "description": {
+              "en": "Technical data: inlet pressure max. 200*10^5 Pa.",
+              "de": "Vordruck: max. 200 * 10^5 Pa"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Critical technical specification."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0230 Technische Daten: Hinterdruck 0-10*10^5 Pa",
+            "description": {
+              "en": "Technical data: outlet pressure 0-10*10^5 Pa.",
+              "de": "Hinterdruck: 0 - 10 * 10^5 Pa"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Critical technical specification."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0240 Technische Daten: Leckrate <10^-7 Pa*l/s",
+            "description": {
+              "en": "Technical data: leakage rate <10^-7 Pa*l/s.",
+              "de": "Leckrate: < 10 - 7 Pa*I/s"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Critical safety specification."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0250 Technische Daten: Eingang W 21,8 x 1/14",
+            "description": {
+              "en": "Technical data: input W 21.8 x 1/14.",
+              "de": "Eingang: W 21,8 x 1/14"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Connection specification."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0260 Technische Daten: Ausgang G 3/8\"",
+            "description": {
+              "en": "Technical data: output G 3/8\".",
+              "de": "Ausgang: G 3/8\""
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Connection specification."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0270 Technische Daten: PCTFE-Dichtsatz",
+            "description": {
+              "en": "Technical data: PCTFE seal set.",
+              "de": "PCTFE-Dichtsatz"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Material specification."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "01.01.0280 Typenblätter beilegen",
+            "description": {
+              "en": "Type sheets of the offered valves and pressure reducing stations must be attached to the offer.",
+              "de": "Typenblätter der angebotenen Armaturen und Druckminderstationen sind dem Angebot beizulegen."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Documentation requirement."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE=",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk=",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEw",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEz",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE1",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE2",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE3",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE5",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIx",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI1",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI3",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI5",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMw",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMz",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQw",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQy",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQ1",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUw",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUy",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTc1",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTgy",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk5",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTExNg==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIwMg==",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE=",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk=",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEw",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTEz",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE1",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE2",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE3",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE5",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIx",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI1",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI3",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI5",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMw",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMx",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMy",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTMz",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTM0",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQw",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQy",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQ1",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUw",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTUy",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU0",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTU3",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTc1",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTgy",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTk5",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTExNg==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIwMg==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "00 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "00.02.03 Tischplatten",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "00.02.03 Tischplatten",
+            "description": {
+              "en": "Table tops must be suitable for highest demands, executed in uniform thickness, using commercially available materials. All joints must be executed in color according to the project's color concept.",
+              "de": "Tischplatten sind grundsätzlich für höchste Ansprüche geeignet vorzusehen und in einheitlicher Dicke auszuführen; es sind handelsübliche Materialien zu verwenden. Alle Verfugungen sind in der Farbe gemäß Farbkonzept des Projektes auszuführen."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "The description uses 'sind ... vorzusehen' and 'sind ... auszuführen', indicating mandatory requirements. No mention of 'Soll' or 'optional'."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE4"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "00.02.08 Hochschränke / Stellagen",
+            "description": {
+              "en": "High cabinets / shelving units: Construction from two side panels, bottom, top, and adjustable shelves made of double-sided plastic-coated melamine resin flat press plate, min. 19mm thick (incl. coating), according to DIN 68 765 (abrasion resistance S, coating class 2, coating min. 0.14mm, emission class E1). Body parts connected via detachable fittings and dowels glued on one side. Back wall is double-sided plastic-coated melamine resin flat press plate, min. 10mm thick, grooved. Visible back walls additionally covered with a panel in body quality. Inner surfaces of sides have grid holes at approx. 32mm spacing for fittings and shelves.",
+              "de": "Sie bestehen aus zwei Seitenteilen, einem unteren Boden, einem oberen Boden und höhenverstellbaren Fachböden. Diese sind gefertigt aus beidseitig kunststoffbeschichteter Melaminharz-Flachpressplatte, mind. 19mm dick (inkl. Beschichtung), nach DIN 68 765 (Abriebwiderstand S, Beschichtungsklasse 2  Be-schichtung mind. 0,14mm  Emissionsklasse E1). Die Korpusteile sind, über lösbare Beschläge und einseitig im Boden verleimte Dübel zu verbinden. Die Rückwand ist eine beidseitig kunststoffbeschichtete Melaminharz-Flachpressplatte, mind. 10mm dick, eingenutet. Sichtbare Rückwände sind, zusätzlich mit einer Platte in Korpusqualität zu versehen. Die Innenflächen der Seiten enthalten Rasterbohrungen im Abstand von ca. 32mm zur Aufnahme von Beschlagteilen und Fachböden."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "The description uses imperative language ('sind zu fertigen', 'sind zu verbinden') indicating mandatory requirements. No 'Soll' or 'optional' wording is present, so it is a must criterion."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI2"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "00.02.16 Sicherheits- bzw. Gefahrenstoffschränke",
+            "description": {
+              "en": "Safety cabinets for hazardous substances.",
+              "de": "00.02.16Sicherheits- bzw. Gefahrenstoffschränke"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "This is a numbered requirement in the specification, indicating a mandatory item."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQ0"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE4",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI2",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQ0"
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTE4",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTI2",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQ0"
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "02 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "02.02.001A Rückwand Melaminharz",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "02.02.001A Rückwand Melaminharz",
+            "description": {
+              "en": "Execution of the back wall: double-sided plastic-coated melamine resin flat press plate, 10mm thick, according to DIN 68765 (abrasion resistance S, coating class 2, coating >0.14mm, emission class E1), glued to the body.",
+              "de": "Ausführung der Rückwand: beidseitig kunststoffbeschichtete Melaminharz-Flachpressplatte, 10mm dick, nach DIN 68765 (Abriebwiderstand S, Beschichtungsklasse 2  Beschichtung größer 0,14mm  Emissionsklasse E1), mit dem Korpus verleimt."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Detailed specification with standard references, indicating mandatory material and dimensions."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "02.02.002A Obere Abdeckung",
+            "description": {
+              "en": "Upper cover designed as a work or storage surface. Execution as an additional, double-sided plastic-coated, 19mm thick melamine resin flat press plate according to DIN 68765 (abrasion resistance S, coating class 2, coating >0.14mm, emission class E1).",
+              "de": "Obere Abdeckung ausgelegt als Arbeits- bzw. Ablage- fläche. Ausführung als zusätzliche, beidseitig kunststoffbeschichtete, 19mm dicke Melaminharz-Flachpressplatte nach DIN 68765 (Abriebwiderstand S, Beschichtungsklasse 2  Beschichtung größer 0,14mm  Emissionsklasse E1)."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Mandatory specification with standard and thickness requirements."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "02.02.003A Lenkrollen",
+            "description": {
+              "en": "The substructure is equipped with 4 swivel castors (adapted to the base height) of approx. 110mm height, of which 2 swivel castors with brakes. The load capacity of one roller must be at least 70kg.",
+              "de": "Der Unterbau ist ausgestattet mit 4 Stk. Lenkrollen (angepasst der Sockelhöhe) von ca. 110mm Höhe, davon 2 Stk. Lenkrollen mit Feststeller. Die Tragkraft einer Rolle muss mindestens 70kg betragen."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Mandatory requirement using 'muss ... betragen' for load capacity."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "02.02.004A Korpus Einschubverfahren",
+            "description": {
+              "en": "Body for insertion method: Analogous to the 'substructure on rollers' variant but with 2 fixed castors and a 3-sided base. Furniture glides on the front allow the substructure to be pulled out.",
+              "de": "Korpus für Einschubverfahren: Analog ausgeführt zur Variante 'Unterbau auf Rollen' jedoch mit 2 Stk. Bockrollen und 3-seitigem Sockel. Möbelgleiter an der Vorderseite erlauben das Herausziehen des Unterbaues."
+            },
+            "priority": "must",
+            "confidence": "medium",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Specification describes a required variant, but language is descriptive rather than imperative."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "02.02.005A Ladenaufteilung",
+            "description": {
+              "en": "Drawers are divided according to standard height units (HE). The dimensions of the individual elements result from the LV or floor plans. The specified dimensions are guidelines; optimal space utilization and compliance with the grid dimension must be observed. The height of the substructures depends on the respective table working heights (standing or sitting height).",
+              "de": "Laden werden nach üblichen Höheneinheiten (HE) eingeteilt. Die Abmessungen der einzelnen Elemente ergeben sich aus dem LV bzw. aus den Grundrissplänen. Die dabei angegebenen Abmessungen sind Richtwerte, auf bestmögliche Raumausnutzung, sowie Einhaltung des Rastermaßes ist zu achten. Die Höhe der Unterbauten richtet sich nach den jeweiligen Tischarbeitshöhen (Steh- oder Sitzhöhe)."
+            },
+            "priority": "must",
+            "confidence": "medium",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Includes 'ist zu achten' indicating mandatory attention to grid dimension, but dimensions are guidelines."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "02.02.006A Abkürzungen",
+            "description": {
+              "en": "Abbreviations: The individual undercounter variants are numbered, the different executions result from the plan legends. In the abbreviations, 'S' stands for base and 'R' for rollers (with 3-sided base), the abbreviations '9' for height 90cm and '7' for 75cm worktop height.",
+              "de": "Die einzelnen Unterschrankvarianten sind durchnummeriert, die unterschiedlichen Ausführungen ergeben sich aus den Planlegenden. In den Abkürzungen stehen 'S' für Sockel und 'R' für Rollen (mit 3seitigem Sockel), die Kürzel '9' für Höhe 90cm und '7' für 75cm Arbeitsplattenhöhe."
+            },
+            "priority": "optional",
+            "confidence": "low",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Informational description of abbreviations, not a requirement."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "02.02.007A Sockel-Sonderhöhe",
+            "description": {
+              "en": "Undercounter units with special base height: For structural reasons, the wastewater connections are sometimes not in the media cell area but in the base area of the substructures. The wastewater pipes must be pulled by the contractor through the base area of the substructures into the media cell. For this purpose, the substructures must be executed with an adapted base with a clear base height of 17 centimeters. However, the fronts of these substructures must be executed analogously to the other furniture fronts (same height of the hinged doors).",
+              "de": "Unterschränke mit Sockel-Sonderhöhe: Aus baulichen Gründen liegen die Abwasseranschlüsse teilweise nicht im Bereich der Medienzelle sondern im Sockelbereich der Unterbauten. Die Abwasserleitungen sind durch den AN im Sockelbereich der Unterbauten in die Medienzelle zu ziehen. Dazu sind die Unterbauten mit einem adaptierten Sockel mit einer lichten Sockelhöhe von 17 Zentimetern auszuführen. Die Fronten dieser Unterbauten sind jedoch analog den übrigen Möbelfronten (gleiche Höhe der Flügeltüren) auszuführen."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Multiple mandatory requirements using 'sind ... zu ziehen', 'sind ... auszuführen'."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          },
+          {
+            "bulletPoint": "02.02.008A Geräteplattform",
+            "description": {
+              "en": "Equipment platform: For setting up devices, consisting of a board (tabletop quality, board material = phenolic resin solid core) and 4 swivel castors (analogous to substructure on rollers). The board thickness must be dimensioned so that the listed devices can be safely placed on it; if necessary, required frame constructions are in the positions.",
+              "de": "Geräteplattform: Zur Aufstellung von Geräten, bestehend aus einer Platte (Tischplattenqualität, Plattenmaterial = Phenolharz- Vollkern) und 4 Stk. Lenkrollen (analog zu Unterbau auf Rollen). Die Plattenstärke ist so zu bemessen, dass die angeführten Geräte sicher darauf aufgestellt werden können, ggf. erforderliche Rahmenkonstruktionen sind in den Positionen ÜbertragEUR"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Mandatory requirement using 'ist so zu bemessen' for board thickness."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      },
+      {
+        "bulletPoint": "02.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "02 - Einschulung, Service, Wartung",
+            "description": {
+              "en": "Training, service, maintenance",
+              "de": "02 - Einschulung, Service, Wartung"
+            },
+            "priority": "must",
+            "confidence": "medium",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "This is a main category heading for service-related costs, likely a mandatory requirement for the project."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwNA=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwNA=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTIy",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA==",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwNA=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "12 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "12.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "12 893 Stativstäbe",
+            "description": {
+              "en": "Large-format laboratory table tops made of clay ceramic materials",
+              "de": "Stativstäbe"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Standard referenced in tender, likely mandatory for compliance."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "14 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "14.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "14 175 Teil 1 bis Teil 7",
+            "description": {
+              "en": "Wood-based materials - Melamine-coated panels for indoor use",
+              "de": "Teil 1 bis Teil 7"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Standard referenced in tender, likely mandatory for compliance."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "16 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "16.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "16 926 Dekorative Schichtpressstoffplatten",
+            "description": {
+              "en": "Decorative high-pressure laminates",
+              "de": "Dekorative Schichtpressstoffplatten"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Standard referenced in tender, likely mandatory for compliance."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "18 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "18.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "18 352 Fliesen- und Plattenarbeiten",
+            "description": {
+              "en": "Gas, water and wastewater installation work",
+              "de": "Fliesen- und Plattenarbeiten"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Standard referenced in tender, likely mandatory for compliance."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw",
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYx"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw",
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYx"
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw",
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYx"
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "28 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "28.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "28 062 Wechseltemperaturbeständigkeit von Materialien",
+            "description": {
+              "en": "Alternating temperature resistance of materials",
+              "de": "Wechseltemperaturbeständigkeit von Materialien"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Standard referenced in tender, likely mandatory for compliance."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "31 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "31.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "31 000 Sicherheitsgerechtes Gestalten techn. Erzeugnisse",
+            "description": {
+              "en": "Safety-oriented design of technical products",
+              "de": "Sicherheitsgerechtes Gestalten techn. Erzeugnisse"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Standard referenced in tender, likely mandatory for compliance."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "53 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "53.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "53 389 UV-Beständigkeit von Materialien",
+            "description": {
+              "en": "UV resistance of materials",
+              "de": "UV-Beständigkeit von Materialien"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Standard referenced in tender, likely mandatory for compliance."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "57 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "57.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "57 789 Teil 100 - Best. für Einrichtungsgegenst. im Lab.",
+            "description": {
+              "en": "Part 100 - Requirements for laboratory furniture",
+              "de": "Teil 100 - Best. für Einrichtungsgegenst. im Lab."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Standard referenced in tender, likely mandatory for compliance."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "68 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "68.00 [Sub-Category]",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "68 856 Begriffe für Möbelbeschläge",
+            "description": {
+              "en": "Furniture, shelves, shelf supports",
+              "de": "Begriffe für Möbelbeschläge"
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Standard referenced in tender, likely mandatory for compliance."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTYw"
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "03 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "03.03.001B First floor construction",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "03.03.001B First floor construction",
+            "description": {
+              "en": "Construction work for the first upper floor.",
+              "de": "Bauarbeiten für das 1. Obergeschoß."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Explicitly listed as a cost item, indicating it is a mandatory requirement."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "04 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "04.04.001C Second floor construction",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "04.04.001C Second floor construction",
+            "description": {
+              "en": "Construction work for the second upper floor.",
+              "de": "Bauarbeiten für das 2. Obergeschoß."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Listed as a separate cost item, thus a required work package."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "05 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "05.05.001D Third floor construction",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "05.05.001D Third floor construction",
+            "description": {
+              "en": "Construction work for the third upper floor.",
+              "de": "Bauarbeiten für das 3. Obergeschoß."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Included in the cost summary, indicating it is a mandatory requirement."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "06 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "06.06.001E Fourth floor construction",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "06.06.001E Fourth floor construction",
+            "description": {
+              "en": "Construction work for the fourth upper floor.",
+              "de": "Bauarbeiten für das 4. Obergeschoß."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Listed as a cost item, thus a required scope."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "07 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "07.07.001F Fifth floor construction",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "07.07.001F Fifth floor construction",
+            "description": {
+              "en": "Construction work for the fifth upper floor.",
+              "de": "Bauarbeiten für das 5. Obergeschoß."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Explicitly listed, indicating it is a mandatory work package."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "08 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "08.08.001G Sixth floor construction",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "08.08.001G Sixth floor construction",
+            "description": {
+              "en": "Construction work for the sixth upper floor.",
+              "de": "Bauarbeiten für das 6. Obergeschoß."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Listed as a separate cost item, thus a required requirement."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  },
+  {
+    "bulletPoint": "99 [Root Category]",
+    "description": {
+      "en": ""
+    },
+    "priority": "must",
+    "confidence": "high",
+    "equivalenceAllowed": null,
+    "fullfillable": null,
+    "status": "waitingForAnalysis",
+    "aiReasoning": null,
+    "feedback": null,
+    "feedbackText": null,
+    "openQuestionId": null,
+    "deliverableArray": [
+      {
+        "bulletPoint": "99.99.001H Miscellaneous",
+        "description": {
+          "en": ""
+        },
+        "priority": "must",
+        "confidence": "high",
+        "equivalenceAllowed": null,
+        "fullfillable": null,
+        "status": "waitingForAnalysis",
+        "aiReasoning": null,
+        "feedback": null,
+        "feedbackText": null,
+        "openQuestionId": null,
+        "deliverableArray": [
+          {
+            "bulletPoint": "99.99.001H Miscellaneous",
+            "description": {
+              "en": "Other miscellaneous works not covered by the above levels.",
+              "de": "Sonstige Arbeiten, die nicht in den obigen Geschossen enthalten sind."
+            },
+            "priority": "must",
+            "confidence": "high",
+            "equivalenceAllowed": null,
+            "fullfillable": null,
+            "status": "waitingForAnalysis",
+            "aiReasoning": {
+              "en": "Listed as a cost item for 'Sonstiges', indicating it is a mandatory catch-all category."
+            },
+            "feedback": null,
+            "feedbackText": null,
+            "openQuestionId": null,
+            "deliverableArray": [],
+            "procurementDocumentChunkIdArray": [
+              "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+            ],
+            "workspaceDocumentChunkIdArray": [],
+            "citedProductIdArray": [],
+            "citedPersonIdArray": []
+          }
+        ],
+        "procurementDocumentChunkIdArray": [
+          "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+        ],
+        "workspaceDocumentChunkIdArray": [],
+        "citedProductIdArray": [],
+        "citedPersonIdArray": []
+      }
+    ],
+    "procurementDocumentChunkIdArray": [
+      "L1VzZXJzL2thYnVxdWVjaXNvdXphYWx2ZXMvRG9jdW1lbnRzL3JldHJpdmFsX2RvY19leHRyYWN0aW9uL2RvY3MvU2FsemJ1cmcgTGFib3JhdG9yeSBUZW5kZXIucGRmLTQwOA=="
+    ],
+    "workspaceDocumentChunkIdArray": [],
+    "citedProductIdArray": [],
+    "citedPersonIdArray": []
+  }
+]
